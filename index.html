@@ -3,6 +3,19 @@
 <!-- Last Published: April 18, 2025 -->
 <html lang="en-us">
 
+<!------------------------------------------------------------------------------------------------->
+<!--
+这是智能交通实验室网站的头部配置代码,主要包含以下内容:
+
+- 基本元数据设置:字符编码、视口、兼容性等
+- CSS样式表引入:包括第三方库和自定义样式
+- 网站信息配置:作者、描述、图标等
+- 社交媒体元标签:Twitter卡片、Open Graph等
+- 结构化数据:JSON-LD格式的网站和组织信息
+- 其他功能:实时重载、身份验证等
+
+该头部使用了Hugo Blox Builder框架,并配置了响应式设计和主题切换功能。
+-->
 <head>
   <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer>
   </script>
@@ -73,11 +86,28 @@
     IntelligentTransportationLab
   </title>
 </head>
+<!------------------------------------------------------------------------------------------------->
+
+
 
 <body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   "
   data-wc-page-id="3976528693a0108357f4928017600865">
   <script src="/js/wowchemy-init.min.js">
   </script>
+<!------------------------------------------------------------------------------------------------->
+<!--
+    搜索模态框组件
+    包含:
+    - 搜索标题和关闭按钮
+    - 搜索输入框
+    - 搜索结果展示区域
+    
+    使用方法:
+    1. 通过 id="search" 引用此模态框
+    2. 搜索框输入内容会触发搜索
+    3. 搜索结果将显示在 search-hits 区域
+    4. 点击关闭按钮可关闭模态框
+    -->
   <aside class="search-modal" id="search">
     <div class="container">
       <section class="search-header">
@@ -105,7 +135,30 @@
       </section>
     </div>
   </aside>
-  <div class="page-header header--fixed">
+  <!------------------------------------------------------------------------------------------------->
+
+  <!------------------------------------------------------------------------------------------------->
+  <!--
+    导航栏头部组件
+    包含以下主要元素:
+    - 品牌 Logo 和名称 (桌面端和移动端分别显示)
+    - 响应式折叠菜单按钮 (移动端显示)
+    - 主导航菜单，包含:
+      * Tour
+      * News 
+      * People
+      * Events
+      * Publications 
+      * Contact
+    - 搜索按钮
+    
+    特点:
+    - 使用 Bootstrap 框架构建
+    - 响应式设计，适配桌面和移动设备
+    - 固定定位在页面顶部
+    - 包含折叠菜单功能
+    -->
+    <div class="page-header header--fixed">
     <header>
       <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
         <div class="container-xl">
@@ -184,9 +237,21 @@
       </nav>
     </header>
   </div>
+  <!------------------------------------------------------------------------------------------------->
+
   <div class="page-body">
     <span class="js-widget-page d-none">
     </span>
+    
+    <!------------------------------------------------------------------------------------------------->
+    <!--
+        这是网站的英雄(Hero)部分,包含以下内容:
+        - 实验室名称标题 "Intelligent Transportation Lab"
+        - 简短介绍文本,说明实验室是人工智能研究、教学和实践的卓越中心
+        - 右侧配图,使用响应式图片,支持不同分辨率
+        - 采用两栏布局,左侧文字说明,右侧图片展示
+        - 使用 Bootstrap 栅格系统实现响应式布局
+        -->
     <section id="section-hero" class="home-section wg-hero  ">
       <div class="home-section-bg ">
       </div>
@@ -216,6 +281,20 @@
         </div>
       </div>
     </section>
+    <!------------------------------------------------------------------------------------------------->
+
+    <!------------------------------------------------------------------------------------------------->
+    <!--
+        该部分为网站的"最新新闻"展示区域:
+        - 使用 section 标签包含整个新闻区块,ID为"section-collection"
+        - 包含标题"Latest News"
+        - 每条新闻都以卡片(card-simple)形式展示:
+          - 显示发布日期和阅读时间
+          - 包含新闻配图(支持图片悬停放大效果)
+          - 新闻标题和简短描述
+          - 所有内容都可点击跳转到详情页
+        - 采用响应式布局,支持在不同设备上自适应显示
+        -->
     <section id="section-collection" class="home-section wg-collection  ">
       <div class="home-section-bg ">
       </div>
@@ -299,6 +378,25 @@
         </div>
       </div>
     </section>
+    <!------------------------------------------------------------------------------------------------->
+
+    <!------------------------------------------------------------------------------------------------->
+    <!--
+          主页全屏背景图片区块
+          - section-markdown: Markdown 内容区块
+          - home-section: 主页区块样式
+          - wg-markdown: Markdown 组件样式
+          - fullscreen: 全屏显示
+          
+          背景图片设置:
+          - 使用 webp 格式的编程相关图片
+          - 背景图片居中显示并填充
+          - 亮度保持原值
+          
+          布局:
+          - 使用 Bootstrap 栅格系统
+          - 居中对齐的单列布局
+        -->
     <section id="section-markdown" class="home-section wg-markdown  fullscreen" style="padding: 20px 0 20px 0;">
       <div class="home-section-bg  bg-image"
         style="background-image: url(&#39;http://localhost:1313/media/coders_hu_4c36ec9b900d2bd1.webp&#39;);background-size: cover;background-position: center;filter: brightness(1);">
@@ -310,6 +408,21 @@
         </div>
       </div>
     </section>
+    <!------------------------------------------------------------------------------------------------->
+
+    <!------------------------------------------------------------------------------------------------->
+    <!--
+    该部分为网站首页的预印本论文展示区块:
+    - 使用 section 标签创建独立区域，ID为"section-collection"
+    - 包含标题"Latest Preprints"(最新预印本)
+    - 展示论文条目，包含:
+      - 作者信息和链接
+      - 发表年份
+      - 论文标题和链接
+      - 相关资源按钮(PDF、代码、数据集、海报、视频等)
+    - 采用响应式布局，使用Bootstrap的栅格系统
+    - 每个论文条目包含多个资源链接按钮，统一使用btn-outline-primary样式
+    -->
     <section id="section-collection" class="home-section wg-collection  ">
       <div class="home-section-bg ">
       </div>
@@ -367,6 +480,15 @@
         </div>
       </div>
     </section>
+    <!------------------------------------------------------------------------------------------------->
+
+    <!------------------------------------------------------------------------------------------------->
+    <!-- 
+        这是一个主页的团队导航区块。
+        包含一个"Meet the team"按钮,点击后跳转到 people 页面。
+        使用 Bootstrap 栅格系统进行布局,按钮样式采用 Bootstrap 的 btn-primary 类。
+        区块 ID 为 section-markdown,使用 home-section 和 wg-markdown 类进行样式控制。
+        -->
     <section id="section-markdown" class="home-section wg-markdown  ">
       <div class="home-section-bg ">
       </div>
@@ -384,7 +506,16 @@
         </div>
       </div>
     </section>
+    <!------------------------------------------------------------------------------------------------->
   </div>
+
+  <!------------------------------------------------------------------------------------------------->
+  <!-- 页面底部区域
+  包含以下内容:
+  - 版权声明和 Creative Commons 许可证信息 (CC BY NC ND 4.0)
+  - Creative Commons 图标链接
+  - 网站构建工具 Hugo Blox Builder 的致谢信息和链接
+  -->
   <div class="page-footer">
     <div class="container">
       <footer class="site-footer">
@@ -421,6 +552,25 @@
       </footer>
     </div>
   </div>
+  <!------------------------------------------------------------------------------------------------->
+
+  <!------------------------------------------------------------------------------------------------->
+  <!--
+    该部分代码主要完成以下功能:
+    1. 引入基础的vendor bundle脚本
+    2. 引入Leaflet地图库用于地图展示
+    3. 定义搜索结果模板,用于展示搜索命中的内容
+    4. 引入Fuse.js用于模糊搜索功能
+    5. 引入mark.js用于搜索结果高亮
+    6. 配置页面数据(headroom功能关闭)
+    7. 引入wowchemy相关脚本用于网站功能
+    8. 引入地图相关模块脚本
+    
+    注意事项:
+    - 确保CDN资源的完整性校验(integrity属性)
+    - 模板使用了特定的搜索结果展示结构
+    - 脚本加载顺序需要保持不变以确保依赖关系
+    -->
   <script src="/js/vendor-bundle.min.js">
   </script>
   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous">
@@ -456,6 +606,18 @@
   </script>
   <script src="/js/wowchemy-map.js" type="module">
   </script>
+  <!------------------------------------------------------------------------------------------------->
+  
+  <!------------------------------------------------------------------------------------------------->
+  <!-- 
+    引用模态框组件
+    包含以下功能:
+    - 显示引用内容的标题和关闭按钮
+    - 在模态框主体中展示引用文本
+    - 底部操作按钮:复制和下载引用内容
+    - 错误信息显示区域
+    使用 Bootstrap 的模态框样式和功能
+    -->
   <div id="modal" class="modal fade" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -492,6 +654,7 @@
       </div>
     </div>
   </div>
+  <!------------------------------------------------------------------------------------------------->
   <script src="/js/wowchemy-publication.js" type="module">
   </script>
 </body>
