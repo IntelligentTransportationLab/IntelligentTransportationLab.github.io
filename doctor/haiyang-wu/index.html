@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Hugo Blox Builder 5.9.7">
+  <link rel="stylesheet" href="/css/vendor-bundle.min.css" media="print" onload='this.media="all"'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css"
+    integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw=="
+    crossorigin="anonymous" media="print" onload='this.media="all"'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity=""
+    crossorigin="anonymous" media="print" onload='this.media="all"'>
+  <link rel="stylesheet" href="/css/wowchemy.css">
+  <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print"
+    onload='this.media="all"'>
+  <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload='this.media="all"'
+    disabled>
+  <meta name="author" content="Nelson Bighetti">
+  <meta name="description"
+    content="A highly-customizable Hugo research group theme powered by Wowchemy website builder.">
+  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/author/alice-wu-%E5%90%B3%E6%81%A9%E9%81%94/">
+  <link rel="canonical" href="http://localhost:1313/author/alice-wu-%E5%90%B3%E6%81%A9%E9%81%94/">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" type="image/png" href="/media/icon_hu_2311fe1a408f47c1.png">
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu_4eb7679362359773.png">
+  <meta name="theme-color" content="#1565c0">
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:site" content="@GetResearchDev">
+  <meta property="twitter:creator" content="@GetResearchDev">
+  <meta property="twitter:image"
+    content="http://localhost:1313/author/alice-wu-%E5%90%B3%E6%81%A9%E9%81%94/avatar_hu_2af60430eb74e557.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Wowchemy Research Group">
+  <meta property="og:url" content="http://localhost:1313/author/alice-wu-%E5%90%B3%E6%81%A9%E9%81%94/">
+  <meta property="og:title" content="Alice Wu 吳恩達 | Wowchemy Research Group">
+  <meta property="og:description"
+    content="A highly-customizable Hugo research group theme powered by Wowchemy website builder.">
+  <meta property="og:image"
+    content="http://localhost:1313/author/alice-wu-%E5%90%B3%E6%81%A9%E9%81%94/avatar_hu_2af60430eb74e557.jpg">
+  <meta property="og:locale" content="en-us">
+  <link rel="alternate" href="/author/alice-wu-%E5%90%B3%E6%81%A9%E9%81%94/index.xml" type="application/rss+xml"
+    title="Wowchemy Research Group">
+  <title>Haiyang Wu | IntelligentTransportationLab</title>
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper"
+  data-wc-page-id="da99cb196019cc5857b9b3e950397ca9">
+  <script src="/js/wowchemy-init.min.js"></script>
+  <aside class="search-modal" id="search">
+    <div class="container">
+      <section class="search-header">
+        <div class="row no-gutters justify-content-between mb-3">
+          <div class="col-6">
+            <h1>Search</h1>
+          </div>
+          <div class="col-6 col-search-close"><a class="js-search" href="#" aria-label="Close"><i
+                class="fas fa-times-circle text-muted" aria-hidden="true"></i></a></div>
+        </div>
+        <div id="search-box"><input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+            autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+            aria-label="Search..."></div>
+      </section>
+      <section class="section-search-results">
+        <div id="search-hits"></div>
+      </section>
+    </div>
+  </aside>
+  <div class="page-header header--fixed">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+        <div class="container-xl">
+          <div class="d-none d-lg-inline-flex"><a class="navbar-brand" href="/">IntelligentTransportationLab</a></div><button
+            type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+            aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation"><span><i
+                class="fas fa-bars"></i></span></button>
+          <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none"><a class="navbar-brand" href="/">IntelligentTransportationLab</a></div>
+          <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+            <ul class="navbar-nav d-md-inline-flex">
+              <li class="nav-item"><a class="nav-link" href="/tour"><span>Tour</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="/post"><span>News</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="/people"><span>People</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="/event"><span>Events</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="/publication"><span>Publications</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="/contact"><span>Contact</span></a></li>
+            </ul>
+          </div>
+          <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+            <li class="nav-item"><a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search"
+                  aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <div class="page-body">
+    
+    <section id="profile-page" class="pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div id="profile"><img class="avatar avatar-circle" width="270" height="270"
+                src="/doctor/haiyang-wu/self.jpg" alt="Haiyang Wu">
+              <div class="portrait-title">
+                <h2>Haiyang Wu</h2>
+                <h3>Doctoral students</h3>
+                <h3><span>Chongqing Jiaotong University</span></h3>
+              </div>
+              <ul class="network-icon" aria-hidden="true">
+                <li><a href="mailto:test@example.org" aria-label="envelope"><i class="fas fa-envelope big-icon"></i></a>
+                </li>
+                <li><a href="https://twitter.com/GeorgeCushen" target="_blank" rel="noopener" aria-label="twitter"><i
+                      class="fab fa-twitter big-icon"></i></a></li>
+                <li><a href="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ" target="_blank" rel="noopener"
+                    aria-label="google-scholar"><i class="ai ai-google-scholar big-icon"></i></a></li>
+                <li><a href="https://github.com/gcushen" target="_blank" rel="noopener" aria-label="github"><i
+                      class="fab fa-github big-icon"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="article-style">
+              <p>he graduated with a master's degree in Electronic Information from Xijing University. His
+                research areas include deep learning, diffusion models, object detection, and sequence to sequence
+                prediction tasks. Currently, his research focuses on transportation and intelligent driving.</p>
+              <p>The broadcast published 2 SCI papers and 1 EI conference paper between 2024-2025, and applied for 1
+                software copyright. My ORCID is <a href="https://orcid.org/my-orcid?orcid=0009-0009-2122-7435">Haiyang
+                  Wu</a>.</p>
+              
+              <div class="alert alert-info">
+                <div style="margin-bottom:5px"><b>News</b> (Apr, 2025):</div>
+                <div style="margin-bottom:5px">My paper on fire detection, which was co authored with Xue Zhipeng, has
+                  recently been accepted by IEEE Access.</div>
+                <div style="margin-bottom:5px">I am currently preparing for the doctoral entrance exam.</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5">
+                <h3>Education</h3>
+                <ul class="ul-edu fa-ul mb-0">
+                  <li><i class="fa-li fas fa-graduation-cap"></i>
+                    <div class="description">
+                      <p class="course">Master in Electronic Information, 2025</p>
+                      <p class="institution">Xijing University</p>
+                    </div>
+                  </li>
+                  <li><i class="fa-li fas fa-graduation-cap"></i>
+                    <div class="description">
+                      <p class="course">B.E. in Electrical Engineering and Automation, 2022</p>
+                      <p class="institution">Chongqing College of Mobile Communication</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-7">
+                <h3>Research Interests</h3>
+                <ul class="ul-interests mb-0">
+                  <li>Deep Learning</li>
+                  <li>Diffusion Models</li>
+                  <li>Object Detection</li>
+                  <li>Sequence to Sequence Prediction</li>
+                  <li>Intelligent Transportation</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="wg-portfolio pt-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2>Recent Projects</h2>
+              </div>
+            </div>
+            <div id="projectContainer"></div>
+          </div>
+        </section>
+        <section class="wg-pages pt-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2>Recent Achievement</h2>
+                <h3>Papers</h3>
+                <div id="papersContainer" class="papers-container"></div>
+                <h3>Papers under submission</h3>
+                <div id="patentsContainer" class="patents-container"></div>
+                <h3>Software Copyright</h3>
+                <div id="softwareContainer" class="software-container"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="wg-accomplishments pt-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2>Honors and Awards</h2>
+                <ul id="achievementsList"></ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="wg-skills pt-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2>Languages and Tools</h2>
+                <div id="toolsContainer" class="tools-container">
+                  <style>
+                    .tools-flex-container {
+                      display: flex;
+                      flex-wrap: wrap;
+                      gap: 10px;
+                      align-items: center;
+                      justify-content: flex-start;
+                      padding: 10px 0;
+                      overflow-x: auto;
+                      white-space: nowrap;
+                    }
+
+                    .tool-item {
+                      display: inline-flex;
+                      align-items: center;
+                      justify-content: center;
+                      width: 40px;
+                      height: 40px;
+                      flex-shrink: 0;
+                    }
+
+                    .tool-item img {
+                      max-width: 100%;
+                      max-height: 100%;
+                      object-fit: contain;
+                    }
+                  </style>
+                  <div class="tools-flex-container">
+                    <div class="tool-item">
+                      <a href="https://aws.amazon.com" target="_blank" rel="noreferrer">
+                        <img
+                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                          alt="aws" width="40" height="40" />
+                      </a>
+                    </div>
+                    <div class="tool-item">
+                      <a href="https://codeigniter.com" target="_blank" rel="noreferrer">
+                        <img src="https://cdn.worldvectorlogo.com/logos/codeigniter.svg" alt="codeigniter" width="40"
+                          height="40" />
+                      </a>
+                    </div>
+                    <div class="tool-item">
+                      <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
+                        <img
+                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
+                          alt="docker" width="40" height="40" />
+                      </a>
+                    </div>
+                    <div class="tool-item">
+                      <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer">
+                        <img
+                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg"
+                          alt="dotnet" width="40" height="40" />
+                      </a>
+                    </div>
+                    <div class="tool-item">
+                      <a href="https://cloud.google.com" target="_blank" rel="noreferrer">
+                        <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40"
+                          height="40" />
+                      </a>
+                    </div>
+                    <div class="tool-item">
+                      <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+                        <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40"
+                          height="40" />
+                      </a>
+                    </div>
+                    <div class="tool-item">
+                      <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
+                          alt="linux" width="40" height="40" />
+                      </a>
+                    </div>
+                    <div class="tool-item">
+                      <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer">
+                        <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40"
+                          height="40" />
+                      </a>
+                    </div>
+                    <div class="tool-item">
+                      <a href="https://nodejs.org" target="_blank" rel="noreferrer">
+                        <img
+                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+                          alt="nodejs" width="40" height="40" />
+                      </a>
+                    </div>
+                    <div class="tool-item">
+                      <a href="https://opencv.org/" target="_blank" rel="noreferrer">
+                        <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40"
+                          height="40" />
+                      </a>
+                    </div>
+                    <div class="tool-item">
+                      <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer">
+                        <img
+                          src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg"
+                          alt="pandas" width="40" height="40" />
+                      </a>
+                    </div>
+                    <div class="tool-item">
+                      <a href="https://www.php.net" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"
+                          alt="php" width="40" height="40" />
+                      </a>
+                    </div>
+                    <div class="tool-item">
+                      <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
+                        <img
+                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg"
+                          alt="postgresql" width="40" height="40" />
+                      </a>
+                    </div>
+                    <div class="tool-item">
+                      <a href="https://www.python.org" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                          alt="python" width="40" height="40" />
+                      </a>
+                    </div>
+                    <div class="tool-item">
+                      <a href="https://pytorch.org/" target="_blank" rel="noreferrer">
+                        <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40"
+                          height="40" />
+                      </a>
+                    </div>
+                    <div class="tool-item">
+                      <a href="https://redis.io" target="_blank" rel="noreferrer">
+                        <img
+                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg"
+                          alt="redis" width="40" height="40" />
+                      </a>
+                    </div>
+                    <div class="tool-item">
+                      <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer">
+                        <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40"
+                          height="40" />
+                      </a>
+                    </div>
+                    <div class="tool-item">
+                      <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer">
+                        <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40"
+                          height="40" />
+                      </a>
+                    </div>
+                    <div class="tool-item">
+                      <a href="https://vuejs.org/" target="_blank" rel="noreferrer">
+                        <img
+                          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg"
+                          alt="vuejs" width="40" height="40" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
+      </div>
+    </section>
+  </div>
+  <div class="page-footer">
+    <div class="container">
+      <footer class="site-footer">
+        <p class="powered-by copyright-license-text">© 2025 Me. This work is licensed under <a
+            href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC
+            ND 4.0</a></p>
+        <p class="powered-by footer-license-icons"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0"
+            rel="noopener noreferrer" target="_blank" aria-label="Creative Commons"><i
+              class="fab fa-creative-commons fa-2x" aria-hidden="true"></i> <i class="fab fa-creative-commons-by fa-2x"
+              aria-hidden="true"></i> <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i> <i
+              class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i></a></p>
+        <p class="powered-by">Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank"
+            rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder"
+            target="_blank" rel="noopener">open source</a> website builder that empowers creators.</p>
+      </footer>
+    </div>
+  </div>
+  <script src="/js/vendor-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity=""
+    crossorigin="anonymous"></script>
+  <script id="search-hit-fuse-template" type="text/x-template"><div class="search-hit" id="summary-{{key}}">
+        <div class="search-hit-content">
+          <div class="search-hit-name">
+            <a href="{{relpermalink}}">{{title}}</a>
+            <div class="article-metadata search-hit-type">{{type}}</div>
+            <p class="search-hit-description">{{snippet}}</p>
+          </div>
+        </div>
+      </div></script>
+  <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js"
+    integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js"
+    integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg=="
+    crossorigin="anonymous"></script>
+  <script id="page-data" type="application/json">{ "use_headroom": true }</script>
+  <script src="/js/wowchemy-headroom.js" type="module"></script>
+  <script src="/en/js/wowchemy.min.js"></script>
+  <script src="/js/wowchemy-map.js" type="module"></script>
+  <div id="modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Cite</h5><button type="button" class="close" data-dismiss="modal"
+            aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <pre><code></code></pre>
+        </div>
+        <div class="modal-footer"><a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank"><i
+              class="fas fa-copy"></i> Copy </a><a class="btn btn-outline-primary my-1 js-download-cite" href="#"
+            target="_blank"><i class="fas fa-download"></i> Download</a>
+          <div id="modal-error"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/wowchemy-publication.js" type="module"></script>
+  <script>// Projects Data
+    const projects = [
+      {
+        title: "Multi stage pedestrian analysis and tracking framework for autonomous driving",
+        description:
+          "We study how lane changes affect traffic interactions and develop a predictive model to enhance autonomous vehicles' decision-making and coordination capabilities.",
+        period: "2025.1 - ?",
+        status: "Doing",
+      },
+      {
+        title: "Prediction of the interaction strength of lane changing vehicles on following vehicles based on prior knowledge",
+        description:
+          "We're developing solutions for ghost probe detection in autonomous vehicles, currently analyzing pedestrian crossing data from the JAAD dataset.",
+        period: "2025.1 - ?",
+        status: "Doing",
+      },
+    ];
+
+    // Papers Data
+    const papers = [
+      {
+        title: "Crack Detection on Road Surfaces Based on Improved YOLOv8",
+        authors: "Haiyang Wu; Lingyun Kong; Denghui Liu",
+        journal: "IEEE Access",
+        year: "2024",
+        doi: "10.1109/ACCESS.2024.3517632",
+      },
+      {
+        title: "Open-set image segmentation based on an improved Segment Anything model",
+        authors: "Haiyang Wu; Lingyun Kong; Zhipeng Xue; Denghui Liu; Songyang Li; Qi Zhang",
+        journal: "2024 6th International Conference on Robotics, Intelligent Control and Artificial Intelligence (RICAI)",
+        year: "2024",
+        doi: "10.1109/ricai64321.2024.10911698",
+      },
+      {
+        title: "Remote Sensing Image Super-Resolution Reconstruction by Fusing Multi-Scale Receptive Fields and Hybrid Transformer",
+        authors: "Liu, D.; Zhong, L.; Wu, H.; Li, S.; Li, Y.",
+        journal: "Scientific reports",
+        year: "2025",
+        doi: "10.1038/s41598-025-86446-5",
+      },
+      {
+        title: "Fire and Smoke Detection Based on Improved YOLOv11",
+        authors: "Xue, Z.; Kong, L.; Wu, H.; Chen, J.",
+        journal: "IEEE Access",
+        year: "2025",
+        doi: "10.1109/ACCESS.2025.3564434",
+      },
+    ];
+
+    // Papers under submission
+    const submissions = [
+      {
+        title:
+          "A Framework for Predicting the Interaction Strength of Lane-Changing Vehicles on Following Vehicles Based on Identified Patterns",
+        authors: "Cailin Lei, Haiyang Wu, Xiaoyu Cai, Yuxiong Ji, Yuchuan Du",
+        target: "Accident Analysis & Prevention",
+        status: "Under Review",
+      },
+    ];
+
+    // Software Copyright
+    const software = [
+      {
+        title:
+          "X-PIC",
+        registration: "2024SR0052492",
+        year: "2024",
+      },
+    ];
+
+    // Honors and Awards
+    const achievements = [
+      "Huawei Cup China Graduate Artificial Intelligence Innovation Competition Third Prize, 2024",
+      "China International Internet + College Students Innovation and Entrepreneurship Competition Silver Award, 2024",
+      "Provincial Bronze Award of China International Internet plus Undergraduate Innovation and Entrepreneurship Competition, 2024",
+    ];
+
+    // Function to load content
+    function loadContent() {
+      // Load Projects
+      const projectContainer = document.getElementById("projectContainer");
+      projects.forEach((project) => {
+        const projectDiv = document.createElement("div");
+        projectDiv.className = "project-item mb-4";
+        projectDiv.innerHTML = `
+          <h4>${project.title}</h4>
+          <p>${project.description}</p>
+          <p><strong>Period:</strong> ${project.period}</p>
+          <p><strong>status:</strong> ${project.status}</p>
+        `;
+        projectContainer.appendChild(projectDiv);
+      });
+
+      // Load Papers
+      const papersContainer = document.getElementById("papersContainer");
+      papers.forEach((paper) => {
+        const paperDiv = document.createElement("div");
+        paperDiv.className = "paper-item mb-3";
+        paperDiv.innerHTML = `
+          <p><strong>${paper.title}</strong><br>
+          ${paper.authors}<br>
+          ${paper.journal}, ${paper.year}<br>
+          DOI: <a href="https://doi.org/${paper.doi}" target="_blank">${paper.doi}</a></p>
+        `;
+        papersContainer.appendChild(paperDiv);
+      });
+
+      // Load Submissions
+      const patentsContainer = document.getElementById("patentsContainer");
+      submissions.forEach((sub) => {
+        const subDiv = document.createElement("div");
+        subDiv.className = "submission-item mb-3";
+        subDiv.innerHTML = `
+          <p><strong>${sub.title}</strong><br>
+          ${sub.authors}<br>
+          Target: ${sub.target} (${sub.status})</p>
+        `;
+        patentsContainer.appendChild(subDiv);
+      });
+
+      // Load Software Copyright
+      const softwareContainer = document.getElementById("softwareContainer");
+      software.forEach((sw) => {
+        const swDiv = document.createElement("div");
+        swDiv.className = "software-item mb-3";
+        swDiv.innerHTML = `
+          <p><strong>${sw.title}</strong><br>
+          Registration: ${sw.registration}, ${sw.year}</p>
+        `;
+        softwareContainer.appendChild(swDiv);
+      });
+
+      // Load Achievements
+      const achievementsList = document.getElementById("achievementsList");
+      achievements.forEach((achievement) => {
+        const li = document.createElement("li");
+        li.textContent = achievement;
+        achievementsList.appendChild(li);
+      });
+    }
+
+    // Load content when page is ready
+    document.addEventListener("DOMContentLoaded", loadContent);</script>
+</body>
+
+</html>
