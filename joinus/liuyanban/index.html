@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>留言板 - 山地城市交通系统与安全重庆市重点实验室</title>
+    <link rel="stylesheet" href="/css/vendor-bundle.min.css" />
+    <link rel="stylesheet" href="/css/wowchemy.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        .message-board {
+            padding: 60px 0;
+        }
+        
+        .message-card {
+            border-left: 4px solid #2196F3;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+        
+        .message-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .message-form {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        
+        .message-item {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+        }
+        
+        .message-author {
+            font-weight: bold;
+            color: #1565c0;
+        }
+        
+        .message-date {
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+        
+        .message-content {
+            margin-top: 10px;
+        }
+        
+        .form-control:focus {
+            border-color: #2196F3;
+            box-shadow: 0 0 0 0.2rem rgba(33, 150, 243, 0.25);
+        }
+    </style>
+</head>
+
+<body class="page-wrapper">
+    <!-- 导航栏 - 与主页一致 -->
+    <div class="page-header header--fixed">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+                <div class="container-xl">
+                    <div class="d-none d-lg-inline-flex">
+                        <a class="navbar-brand" href="/">
+                            山地城市交通系统与安全重庆市重点实验室
+                        </a>
+                    </div>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+                        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                        <a class="navbar-brand" href="/">
+                            山地城市交通系统与安全重庆市重点实验室
+                        </a>
+                    </div>
+                    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+                        <ul class="navbar-nav d-md-inline-flex">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">
+                                    <span>首页</span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="researchDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span>科学研究</span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="researchDropdown">
+                                    <a class="dropdown-item" href="/science/keti/">研究课题</a>
+                                    <a class="dropdown-item" href="/science/honor/">荣誉成果</a>
+                                    <a class="dropdown-item" href="/science/paper/">论文专著</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/people/">
+                                    <span>研究团队</span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="contactDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span>联系交流</span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="contactDropdown">
+                                    <a class="dropdown-item" href="/joinus/communication">联系方式</a>
+                                    <a class="dropdown-item" href="/joinus/zhaopin/">人才招聘</a>
+                                    <a class="dropdown-item active" href="/joinus/liuyanban/">留言板</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="page-body">
+        <!-- 留言板标题部分 -->
+        <section class="recruitment-header text-center" style="background: linear-gradient(135deg, #1565c0, #2196f3);">
+            <div class="container">
+                <h1 class="display-4 mb-3">留言板</h1>
+                <p class="lead">您的意见对我们很重要</p>
+            </div>
+        </section>
+
+        <!-- 留言板内容 -->
+        <section class="message-board">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 text-center">
+                        <p>欢迎您对我们的工作提出宝贵意见或建议，我们会认真阅读每一条留言并及时回复。</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- 留言表单 -->
+                    <div class="col-lg-6 mb-5">
+                        <div class="message-form">
+                            <h3 class="mb-4"><i class="fas fa-pencil-alt mr-2"></i>发表留言</h3>
+                            <form id="messageForm">
+                                <div class="form-group">
+                                    <label for="name">姓名</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">邮箱</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">留言内容</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">提交留言</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- 留言列表 -->
+                    <div class="col-lg-6">
+                        <div class="message-card card">
+                            <div class="card-body">
+                                <h3 class="mb-4"><i class="fas fa-comments mr-2"></i>最新留言</h3>
+                                
+                                <!-- 留言示例1 -->
+                                <div class="message-item">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="message-author">张教授</span>
+                                        <span class="message-date">2025-05-15</span>
+                                    </div>
+                                    <div class="message-content">
+                                        贵实验室在智能交通领域的研究很有前瞻性，希望能有机会合作。
+                                    </div>
+                                </div>
+                                
+                                <!-- 留言示例2 -->
+                                <div class="message-item">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="message-author">李同学</span>
+                                        <span class="message-date">2025-05-10</span>
+                                    </div>
+                                    <div class="message-content">
+                                        请问实验室今年还招收硕士研究生吗？我对车路协同方向很感兴趣。
+                                    </div>
+                                </div>
+                                
+                                <!-- 留言示例3 -->
+                                <div class="message-item">
+                                    <div class="d-flex justify-content-between">
+                                        <span class="message-author">王工程师</span>
+                                        <span class="message-date">2025-05-05</span>
+                                    </div>
+                                    <div class="message-content">
+                                        贵实验室发布的交通数据集对我们项目帮助很大，感谢分享！
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="page-footer">
+        <div class="container">
+            <footer class="site-footer">
+                <p class="powered-by">
+                    © 2025 山地城市交通系统与安全重庆市重点实验室
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="/js/vendor-bundle.min.js"></script>
+    <script src="/js/wowchemy.min.js"></script>
+    <script>
+        // 简单的表单提交处理
+        document.getElementById('messageForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('感谢您的留言！我们会尽快处理。');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>

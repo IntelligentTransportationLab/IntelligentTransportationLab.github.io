@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>人才招聘 - 山地城市交通系统与安全重庆市重点实验室</title>
+    <link rel="stylesheet" href="/css/vendor-bundle.min.css" />
+    <link rel="stylesheet" href="/css/wowchemy.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        .recruitment-header {
+            background: linear-gradient(135deg, #1565c0, #2196f3);
+            color: white;
+            padding: 60px 0;
+            margin-bottom: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .recruitment-header::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .position-card {
+            border-left: 4px solid #2196F3;
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+
+        .position-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .card-body ul li {
+            background: #f5f5f5;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin-bottom: 0;
+        }
+
+        .card-body h5 {
+            width: 100%;
+        }
+
+        .benefit-item {
+            display: inline-block;
+            width: 48%;
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .position-title {
+            color: #1565c0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .position-badge {
+            background: #e3f2fd;
+            color: #1565c0;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+
+        .benefit-item {
+            margin-bottom: 15px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .benefit-item i {
+            position: absolute;
+            left: 0;
+            top: 3px;
+            color: #2196F3;
+        }
+
+        .application-process {
+            counter-reset: step;
+        }
+
+        .process-step {
+            position: relative;
+            padding-left: 60px;
+            margin-bottom: 30px;
+        }
+
+        .process-step::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            background: #2196F3;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="page-wrapper">
+    <!-- 导航栏 - 与主页一致 -->
+    <div class="page-header header--fixed">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+                <div class="container-xl">
+                    <div class="d-none d-lg-inline-flex">
+                        <a class="navbar-brand" href="/">
+                            山地城市交通系统与安全重庆市重点实验室
+                        </a>
+                    </div>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+                        aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+                        <a class="navbar-brand" href="/">
+                            山地城市交通系统与安全重庆市重点实验室
+                        </a>
+                    </div>
+                    <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+                        <ul class="navbar-nav d-md-inline-flex">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">
+                                    <span>首页</span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="researchDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span>科学研究</span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="researchDropdown">
+                                    <a class="dropdown-item" href="/science/keti/">研究课题</a>
+                                    <a class="dropdown-item" href="/science/honor/">荣誉成果</a>
+                                    <a class="dropdown-item" href="/science/paper/">论文专著</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/people/">
+                                    <span>研究团队</span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="contactDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span>联系交流</span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="contactDropdown">
+                                    <a class="dropdown-item" href="/joinus/communication">联系方式</a>
+                                    <a class="dropdown-item active" href="/joinus/zhaopin/">人才招聘</a>
+                                    <a class="dropdown-item" href="/tour/dates">留言板</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="page-body">
+        <!-- 招聘标题部分 -->
+        <section class="recruitment-header text-center">
+            <div class="container">
+                <h1 class="display-4 mb-3">人才招聘</h1>
+                <p class="lead">诚邀英才加入，共创智能交通未来</p>
+            </div>
+        </section>
+
+        <!-- 招聘信息 -->
+        <section class="home-section wg-markdown">
+            <div class="container">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 text-center">
+                        <p>山地城市交通系统与安全重庆市重点实验室依托重庆交通大学，是重庆市在智能交通领域设立的首个省级重点实验室。实验室致力于山地城市特殊环境下的交通系统规划、智能交通技术研发和交通安全研究。
+                        </p>
+                        <p>现面向海内外公开招聘优秀人才，热忱欢迎有志之士加入我们的团队！</p>
+                    </div>
+                </div>
+
+                <!-- 招聘岗位 -->
+                <div class="row">
+                    <div class="col-12 mb-5">
+                        <h2 class="text-center"><i class="fas fa-bullhorn mr-2"></i>招聘岗位</h2>
+                    </div>
+
+                    <!-- 岗位容器改为横向排列 -->
+                    <div class="col-12 d-flex flex-wrap justify-content-between" style="gap: 20px;">
+                        <!-- 岗位1 -->
+                        <div class="flex-grow-1" style="min-width: 300px;">
+                        <div class="card position-card h-100">
+                            <div class="card-body">
+                                <h3 class="position-title">博士后研究员</h3>
+                                <div class="mb-3">
+                                    <span class="position-badge">全职</span>
+                                    <span class="position-badge">年薪30-50万</span>
+                                    <span class="position-badge">提供住房补贴</span>
+                                </div>
+
+                                <h5>岗位职责：</h5>
+                                <ul>
+                                    <li>开展智能交通、车路协同或自动驾驶相关领域的前沿研究</li>
+                                    <li>独立或协助申请国家级、省部级科研项目</li>
+                                    <li>指导研究生科研工作，参与实验室建设</li>
+                                    <li>在领域内高水平期刊发表学术论文</li>
+                                </ul>
+
+                                <h5>任职要求：</h5>
+                                <ul>
+                                    <li>获得交通工程、计算机、自动化等相关专业博士学位不超过3年</li>
+                                    <li>年龄一般不超过35周岁</li>
+                                    <li>以第一作者发表SCI论文2篇以上</li>
+                                    <li>具备良好的英语写作和交流能力</li>
+                                </ul>
+
+                                <h5>研究方向：</h5>
+                                <ul>
+                                    <li>智能交通系统与大数据分析</li>
+                                    <li>车路协同与自动驾驶技术</li>
+                                    <li>交通仿真与优化</li>
+                                    <li>交通安全与风险评估</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                        <!-- 岗位2 -->
+                        <div class="flex-grow-1" style="min-width: 300px;">
+                            <div class="card position-card h-100">
+                            <div class="card-body">
+                                <h3 class="position-title">专职科研人员</h3>
+                                <div class="mb-3">
+                                    <span class="position-badge">全职/兼职</span>
+                                    <span class="position-badge">年薪20-40万</span>
+                                    <span class="position-badge">绩效奖金</span>
+                                </div>
+
+                                <h5>岗位职责：</h5>
+                                <ul>
+                                    <li>参与实验室科研项目的研究与开发</li>
+                                    <li>负责智能交通相关技术的工程化实现</li>
+                                    <li>撰写技术报告和专利申请</li>
+                                    <li>协助科研成果转化和产业化</li>
+                                </ul>
+
+                                <h5>任职要求：</h5>
+                                <ul>
+                                    <li>硕士及以上学历，交通、计算机、电子等相关专业</li>
+                                    <li>3年以上相关领域研究或开发经验</li>
+                                    <li>熟练掌握至少一种编程语言(Python/C++/Java等)</li>
+                                    <li>有实际项目经验者优先</li>
+                                </ul>
+
+                                <h5>专业方向：</h5>
+                                <ul>
+                                    <li>交通大数据分析与挖掘</li>
+                                    <li>智能交通系统开发</li>
+                                    <li>自动驾驶算法研发</li>
+                                    <li>交通仿真与可视化</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 博士生/硕士生招生 -->
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card position-card">
+                            <div class="card-body">
+                                <h3 class="position-title">博士/硕士研究生招生</h3>
+                                <div class="mb-3">
+                                    <span class="position-badge">全日制</span>
+                                    <span class="position-badge">提供奖学金</span>
+                                    <span class="position-badge">科研补助</span>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5>博士研究生：</h5>
+                                        <ul>
+                                            <li><strong>招生专业：</strong>交通信息工程及控制、交通运输规划与管理</li>
+                                            <li><strong>申请条件：</strong>
+                                                <ul>
+                                                    <li>已获得或即将获得相关专业硕士学位</li>
+                                                    <li>有较强的科研能力和创新意识</li>
+                                                    <li>英语六级或同等水平</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>培养方式：</strong>
+                                                <ul>
+                                                    <li>提供国内外学术交流机会</li>
+                                                    <li>参与国家级科研项目</li>
+                                                    <li>优秀者可推荐海外联合培养</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <h5>硕士研究生：</h5>
+                                        <ul>
+                                            <li><strong>招生专业：</strong>交通运输工程、计算机科学与技术</li>
+                                            <li><strong>申请条件：</strong>
+                                                <ul>
+                                                    <li>本科毕业于双一流高校或学科评估B+以上专业</li>
+                                                    <li>专业排名前30%</li>
+                                                    <li>对智能交通研究有浓厚兴趣</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>培养特色：</strong>
+                                                <ul>
+                                                    <li>导师一对一指导</li>
+                                                    <li>参与实际工程项目</li>
+                                                    <li>优秀者可推荐攻读博士学位</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 福利待遇 -->
+        <section class="home-section wg-markdown bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2><i class="fas fa-gift mr-2"></i>福利待遇</h2>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4 class="mb-4">科研支持：</h4>
+                        <div class="benefit-item">
+                            <i class="fas fa-flask"></i>
+                            <strong>科研经费：</strong>提供充足的科研启动经费和实验条件
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-book"></i>
+                            <strong>学术交流：</strong>支持参加国内外学术会议和访学交流
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-users"></i>
+                            <strong>团队支持：</strong>配备研究生助理和科研团队支持
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4 class="mb-4">生活保障：</h4>
+                        <div class="benefit-item">
+                            <i class="fas fa-home"></i>
+                            <strong>住房保障：</strong>提供人才公寓或住房补贴
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-utensils"></i>
+                            <strong>餐饮补贴：</strong>提供工作日餐补和节日福利
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-heartbeat"></i>
+                            <strong>医疗保障：</strong>享受补充医疗保险和年度体检
+                        </div>
+                    </div>
+
+                    <div class="col-12 mt-4">
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle mr-2"></i>特别优秀者待遇可面议，实验室将提供具有竞争力的薪酬和发展空间。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 申请流程 -->
+        <section class="home-section wg-markdown">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center mb-5">
+                            <h2><i class="fas fa-clipboard-list mr-2"></i>申请流程</h2>
+                            <p class="text-muted">我们期待您的加入</p>
+                        </div>
+
+                        <div class="application-process">
+                            <div class="process-step">
+                                <h4>提交申请材料</h4>
+                                <p>请将以下材料发送至招聘邮箱：</p>
+                                <ul>
+                                    <li>个人简历（含学习工作经历、科研成果等）</li>
+                                    <li>学历学位证书扫描件</li>
+                                    <li>代表性论文或专利等成果证明</li>
+                                    <li>两封专家推荐信（博士后申请需提供）</li>
+                                </ul>
+                            </div>
+
+                            <div class="process-step">
+                                <h4>材料初审</h4>
+                                <p>实验室招聘委员会将对申请材料进行初审，通过者将收到面试通知。</p>
+                                <p><em>初审结果将在收到申请后15个工作日内反馈。</em></p>
+                            </div>
+
+                            <div class="process-step">
+                                <h4>面试考核</h4>
+                                <p>通过初审的候选人将参加面试，包括：</p>
+                                <ul>
+                                    <li>学术报告（博士后和专职科研岗位）</li>
+                                    <li>专业能力测试</li>
+                                    <li>综合素质面试</li>
+                                </ul>
+                            </div>
+
+                            <div class="process-step">
+                                <h4>录用通知</h4>
+                                <p>通过面试的候选人将收到正式录用通知，办理入职手续。</p>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-5">
+                            <a href="mailto:hr@its.cqjtu.edu.cn" class="btn btn-primary btn-lg">
+                                <i class="fas fa-paper-plane mr-2"></i>立即申请
+                            </a>
+                            <p class="mt-3 text-muted">或致电咨询：023-62651234（人力资源办公室）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="page-footer">
+        <div class="container">
+            <footer class="site-footer">
+                <p class="powered-by">
+                    © 2025 山地城市交通系统与安全重庆市重点实验室
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="/js/vendor-bundle.min.js"></script>
+    <script src="/js/wowchemy.min.js"></script>
+</body>
+
+</html>
