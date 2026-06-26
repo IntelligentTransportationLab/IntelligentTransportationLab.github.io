@@ -28,59 +28,28 @@
     <!-- Page-->
     <div class="page text-center">
       <!-- Page Header-->
-      <header class="page-head header-panel-absolute">
+      <header class="page-head" style="position:absolute; left:0; right:0;top:0">
         <!-- RD Navbar Transparent-->
         <div class="rd-navbar-wrap">
-          <nav class="rd-navbar rd-navbar-default" data-auto-height="false" data-lg-auto-height="true" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="210px" data-xl-stick-up-offset="85px" data-xxl-stick-up-offset="85px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          <nav class="rd-navbar rd-navbar-transparent" data-auto-height="false" data-lg-auto-height="true" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="210px" data-xl-stick-up-offset="85px" data-xxl-stick-up-offset="85px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
             <div class="rd-navbar-inner">
               <!-- RD Navbar Panel-->
               <div class="rd-navbar-panel">
                 <!-- RD Navbar Toggle-->
                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap"><span></span></button>
-                <h4 class="panel-title d-lg-none">空地协同交通管控与智能驾驶课题组</h4>
-                <!-- RD Navbar Right Side Toggle-->
-                <button class="rd-navbar-top-panel-toggle d-lg-none" data-rd-navbar-toggle=".rd-navbar-top-panel"><span></span></button>
-                <div class="rd-navbar-top-panel">
-                  <div class="rd-navbar-top-panel-left-part">
-                    <ul class="list-unstyled">
-                      <li>
-                        <div class="unit flex-row align-items-center unit-spacing-xs">
-                          <div class="unit-left"><span class="icon mdi mdi-phone align-middle"></span></div>
-                          <div class="unit-body"><a href="tel:#">(023)62651999,</a> <a class="d-block d-lg-inline-block" href="tel:#">(023)62650561</a>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="unit flex-row align-items-center unit-spacing-xs">
-                          <div class="unit-left"><span class="icon mdi mdi-map-marker align-middle"></span></div>
-                          <div class="unit-body"><a href="#">重庆市双福新区福星大道1号</a></div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="unit flex-row align-items-center unit-spacing-xs">
-                          <div class="unit-left"><span class="icon mdi mdi-email-open align-middle"></span></div>
-                          <div class="unit-body"><a href="mailto:#">cqjtukxc@cqjtu.edu.cn</a></div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="rd-navbar-top-panel-right-part">
-                    <div class="rd-navbar-top-panel-left-part">
-                      <div class="unit flex-row align-items-center unit-spacing-xs">
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <h4 class="panel-title d-xl-none">空地协同与智能驾驶课题组</h4>
               </div>
               <div class="rd-navbar-menu-wrap clearfix">
                 <!--Navbar Brand-->
-                <div class="rd-navbar-brand"><a class="d-inline-block" href="index.html">
-                    <div class="unit align-items-sm-center unit-xl unit-spacing-custom">
-                      <div class="unit-left"><img width='170' height='172' src='img/lab_logo.png' alt=''/>
+                <div class="rd-navbar-brand" style="padding-top:14px"><a class="d-inline-block" href="index.html">
+                    <div class="unit align-items-sm-center unit-lg flex-xl-row unit-spacing-xxs">
+                      <div class="unit-left">
+                        <div class="unit-left"><img src="img/logo2.png" width="160" height="162" alt="">
+                        </div>
                       </div>
-                      <div class="unit-body">
+                      <div class="unit-body text-xl-start">
                         <div class="rd-navbar-brand-title">重庆交通大学</div>
-                        <div class="rd-navbar-brand-slogan">空地协同交通管控与智能驾驶课题组</div>
+                        <div class="rd-navbar-brand-slogan text-light">空地协同与智能驾驶课题组</div>
                       </div>
                     </div></a></div>
                 <div class="rd-navbar-nav-wrap">
@@ -91,7 +60,7 @@
                     </div>
                     <!-- RD Navbar Nav-->
                     <ul class="rd-navbar-nav">
-                      <li><a href="#">新闻动态</a>
+                      <li class="active"><a href="#">新闻动态</a>
                         <ul class="rd-navbar-dropdown">
                           <li><a href="grid-news.html">最近新闻</a>
                           </li>
@@ -145,6 +114,8 @@
                           </li>
                           <li><a href="grid.html">研发产品</a>
                           </li>
+                          <li><a href="masonry-gallery.html">课题组风采</a>
+                          </li>
                         </ul>
                       </li>
                       <li><a href="#">教学活动</a>
@@ -172,68 +143,65 @@
                     <div class="rd-navbar-search-mobile" id="rd-navbar-search-mobile">
                       <form class="rd-navbar-search-form search-form-icon-right rd-search" action="search-results.html" method="GET">
                         <div class="form-wrap">
-                          <label class="form-label" for="rd-navbar-mobile-search-form-input">Search...</label>
+                          <label class="form-label" for="rd-navbar-mobile-search-form-input">搜索...</label>
                           <input class="rd-navbar-search-form-input form-input form-input-gray-lightest" id="rd-navbar-mobile-search-form-input" type="text" name="s" autocomplete="off"/>
                         </div>
                         <button class="icon fa fa-search rd-navbar-search-button" type="submit"></button>
                       </form>
                     </div>
                   </div>
-                  <div>
-                    <!--RD Navbar Search-->
-                    <div class="rd-navbar-search"><a class="rd-navbar-search-toggle mdi" data-rd-navbar-toggle=".rd-navbar-search" href="#"><span></span></a>
-                      <form class="rd-navbar-search-form search-form-icon-right rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET">
-                        <div class="form-wrap">
-                          <label class="form-label" for="rd-navbar-search-form-input">Search</label>
-                          <input class="rd-navbar-search-form-input form-input form-input-gray-lightest" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off"/>
-                          <div class="rd-search-results-live" id="rd-search-results-live"></div>
-                        </div>
-                      </form>
+                </div>
+                <!--RD Navbar Search-->
+                <div class="rd-navbar-search"><a class="rd-navbar-search-toggle mdi" data-rd-navbar-toggle=".rd-navbar-search" href="#"><span></span></a>
+                  <form class="rd-navbar-search-form search-form-icon-right rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET">
+                    <div class="form-wrap">
+                      <label class="form-label" for="rd-navbar-search-form-input">搜索</label>
+                      <input class="rd-navbar-search-form-input form-input form-input-gray-lightest" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off"/>
+                      <div class="rd-search-results-live" id="rd-search-results-live"></div>
                     </div>
-                    <!--RD Navbar shop-->
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
           </nav>
         </div>
       </header>
-      <section class="section">
+      <section>
         <!-- Swiper-->
-        <div class="swiper-container swiper-slider swiper-slider-2" data-loop="true" data-autoplay="4000" data-slide-effect="slide" data-height="42.1875%" data-min-height="480px">
+        <div class="swiper-container swiper-slider swiper-slider-3" data-loop="true" data-autoplay="4000" data-slide-effect="slide" data-height="100vh" data-min-height="480px">
           <div class="swiper-wrapper">
             <div class="swiper-slide" data-slide-bg="img/IMG_8646.JPG" style="background-position: 80% center">
-              <div class="swiper-slide-caption">
+              <div class="swiper-slide-caption header-transparent-slide-caption">
                 <div class="container">
-                  <div class="row justify-content-sm-center justify-content-xl-start">
-                    <div class="col-lg-9 text-lg-start col-sm-10">
-                      <div data-caption-animate="fadeInUp" data-caption-delay="100">
-                        <h1 class="fw-bold"><a href="academics.html">欢迎来到空地协同交通管控与智能驾驶课题组</a></h1>
+                  <div class="row justify-content-sm-center justify-content-xl-start no-gutters">
+                    <div class="col-lg-6 text-lg-start col-sm-10">
+                      <div data-caption-animate="fadeInUp" data-caption-delay="100" data-caption-duration="1700">
+                        <h1 class="fw-bold">欢迎来到空地协同交通管控与智能驾驶课题组</h1>
                       </div>
-                      <div class="offset-top-20 offset-xs-top-40 offset-xl-top-60 inset-xl-right-100" data-caption-animate="fadeInUp" data-caption-delay="150">
-                        <h5>空地协同交通管控与智能驾驶课题组依托重庆交通大学、重庆市测绘科学技术研究院、航天宏图信息技术股份有限公司，面向山地城市复杂环境，紧扣重庆市空天信息、智能网联等新兴产业发展，聚焦智能感知、时空信息应用基础理论与技术，发挥重庆市唯一测绘类重点学科与国家级一流专业、智能测绘与时空信息工程等学科专业优势，强化跨学科交叉融合，整合行业优势，推进协同创新。</h5>
+                      <div class="offset-top-20 offset-xs-top-40 offset-xl-top-60" data-caption-animate="fadeInUp" data-caption-delay="150" data-caption-duration="1700">
+                        <h5 class="text-regular font-default">面向山地城市复杂环境，聚焦智能感知、时空信息应用基础理论与技术，发挥重庆市唯一测绘类重点学科与国家级一流专业优势，推进协同创新。</h5>
                       </div>
-                      <div class="offset-top-20 offset-xl-top-40" data-caption-animate="fadeInUp" data-caption-delay="400"><a class="btn button-primary" href="academics.html">了解我们</a>
-                        <div class="inset-sm-left-30 d-xl-inline-block"></div>
-                      </div>                      
+                      <div class="offset-top-20 offset-xl-top-40" data-caption-animate="fadeInUp" data-caption-delay="400" data-caption-duration="1700"><a class="btn button-madison btn-ellipse" href="academics.html">了解我们</a>
+                        <div class="inset-sm-left-30 d-xl-inline-block"><a class="btn button-primary btn-ellipse d-none d-xl-inline-block" href="zhaopin.html">加入我们</a></div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide" data-slide-bg="img/IMG_8634.JPG" style="background-position: 80% center">
-              <div class="swiper-slide-caption">
+              <div class="swiper-slide-caption header-transparent-slide-caption">
                 <div class="container">
-                  <div class="row justify-content-sm-center justify-content-xl-start">
-                    <div class="col-lg-9 text-lg-start col-sm-10">
-                      <div data-caption-animate="fadeInUp" data-caption-delay="100">
-                        <h1 class="fw-bold"><a href="academics.html">学术交流&研讨</a></h1>
+                  <div class="row justify-content-sm-center justify-content-xl-start no-gutters">
+                    <div class="col-lg-6 text-lg-start col-sm-10">
+                      <div data-caption-animate="fadeInUp" data-caption-delay="100" data-caption-duration="1700">
+                        <h1 class="fw-bold">学术交流与科研创新</h1>
                       </div>
-                      <div class="offset-top-20 offset-xs-top-40 offset-xl-top-60 inset-xl-right-100" data-caption-animate="fadeInUp" data-caption-delay="150">
-                        <h5>定期举办学术讨论会，分享最新研究成果和前沿技术.</h5>
+                      <div class="offset-top-20 offset-xs-top-40 offset-xl-top-60" data-caption-animate="fadeInUp" data-caption-delay="150" data-caption-duration="1700">
+                        <h5 class="text-regular font-default">定期举办学术讨论会，分享最新研究成果和前沿技术。课题组鼓励跨学科交叉融合，为师生提供一流的科研平台和交流环境。</h5>
                       </div>
-                      <div class="offset-top-20 offset-xl-top-40" data-caption-animate="fadeInUp" data-caption-delay="400"><a class="btn button-primary" href="academics.html">了解我们</a>
-                        <div class="inset-sm-left-30 d-xl-inline-block"></div>
+                      <div class="offset-top-20 offset-xl-top-40" data-caption-animate="fadeInUp" data-caption-delay="400" data-caption-duration="1700"><a class="btn btn-ellipse button-madison" href="academics.html">了解我们</a>
+                        <div class="inset-sm-left-30 d-xl-inline-block"><a class="btn btn-ellipse button-primary d-none d-xl-inline-block" href="grid-news.html">最新动态</a></div>
                       </div>
                     </div>
                   </div>
@@ -241,18 +209,18 @@
               </div>
             </div>
             <div class="swiper-slide" data-slide-bg="img/tushuguan.png" style="background-position: 80% center">
-              <div class="swiper-slide-caption">
+              <div class="swiper-slide-caption header-transparent-slide-caption">
                 <div class="container">
-                  <div class="row justify-content-sm-center justify-content-xl-start">
-                    <div class="col-lg-9 text-lg-start col-sm-10">
-                      <div data-caption-animate="fadeInUp" data-caption-delay="100">
-                        <h1 class="fw-bold"><a href="academics.html">国家级重点实验室 <br class="d-none d-lg-inline-block"> 探索智能交通的未来</a></h1>
+                  <div class="row justify-content-sm-center justify-content-xl-start no-gutters">
+                    <div class="col-lg-6 text-lg-start col-sm-10">
+                      <div data-caption-animate="fadeInUp" data-caption-delay="100" data-caption-duration="1700">
+                        <h1 class="fw-bold">探索智能交通 <br class="d-none d-lg-inline-block"> 共创智慧未来</h1>
                       </div>
-                      <div class="offset-top-20 offset-xs-top-40 offset-xl-top-60 inset-xl-right-100" data-caption-animate="fadeInUp" data-caption-delay="150">
-                        <h5>加入我们，探索山地城市智能交通，深入智能驾驶与交通规划科研一线.</h5>
+                      <div class="offset-top-20 offset-xs-top-40 offset-xl-top-60" data-caption-animate="fadeInUp" data-caption-delay="150" data-caption-duration="1700">
+                        <h5 class="text-regular font-default">加入我们，探索山地城市智能交通，深入智能驾驶与交通规划科研一线。课题组依托国家级重点实验室平台，为你提供卓越的科研环境。</h5>
                       </div>
-                      <div class="offset-top-20 offset-xl-top-40" data-caption-animate="fadeInUp" data-caption-delay="400"><a class="btn button-primary" href="zhaopin.html">加入我们</a>
-                        <div class="inset-sm-left-30 d-xl-inline-block"></div>
+                      <div class="offset-top-20 offset-xl-top-40" data-caption-animate="fadeInUp" data-caption-delay="400" data-caption-duration="1700"><a class="btn btn-ellipse button-madison" href="zhaopin.html">加入我们</a>
+                        <div class="inset-sm-left-30 d-xl-inline-block"><a class="btn btn-ellipse button-primary d-none d-xl-inline-block" href="academics.html">了解更多</a></div>
                       </div>
                     </div>
                   </div>
@@ -264,284 +232,119 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
-      <!-- Setion About Us-->
-      <!-- A Few Words About the University-->
-      <section class="section section-xl bg-default">
-        <div class="container">
-          <div class="row row-50 text-md-start align-items-md-center justify-content-md-between">
-            <div class="col-md-5 col-lg-4 order-md-2"><a href="index.html"><img class="img-responsive d-inline-block" src="img/lab_logo.png" width="326" height="329" alt=""></a></div>
-            <div class="col-md-7 col-lg-7 order-md-1">
-              <h2 class="fw-bold">关于我们</h2>
-              <hr class="divider bg-madison divider-md-0">
-              <div class="offset-top-35 offset-lg-top-60">
-                <p>空地协同交通管控与智能驾驶课题组依托重庆交通大学、重庆市测绘科学技术研究院、航天宏图信息技术股份有限公司，面向山地城市复杂环境，紧扣重庆市空天信息、智能网联等新兴产业发展，聚焦智能感知、时空信息应用基础理论与技术，发挥重庆市唯一测绘类重点学科与国家级一流专业、智能测绘与时空信息工程等学科专业优势，强化跨学科交叉融合，整合行业优势，推进协同创新。针对传统感知技术高精度时空信息获取难、多场景元素拼接融合难、多模态时空信息计算难等三个行业问题，开展高精时空信息智能感知、复杂场景建模与人机交互、多模态时空信息智能计算、时空大数据应用与服务等四个方向的科学研究，构建山区高精智能感知、复杂场景建模和交互、时空智能计算关键技术体系，助推山地城市典型场景时空数据产品研发与应用服务。</p>
-              </div>
-              <div class="offset-top-30"><a class="btn btn-icon btn-icon-right button-default" href="academics.html"><span class="icon fa fa-arrow-right"></span><span>了解更多</span></a></div>
+      <!-- 关于我们 -->
+      <section style="padding:0;position:relative;overflow:hidden;background:url('img/234.png') center/cover no-repeat;min-height:85vh;margin:0">
+        <div style="position:absolute;left:0;top:0;width:100%;height:100%;background:linear-gradient(to right, transparent 30%, #ffffff 80%, #ffffff 100%)"></div>
+        <div style="position:relative;z-index:1;display:flex;align-items:center;justify-content:flex-end;min-height:85vh;padding:60px 5vw">
+          <div style="max-width:480px">
+            <h2 class="home-headings-custom fw-bold view-animate fadeInLeftSm delay-06"><span class="first-word">关于</span>我们</h2>
+            <div class="offset-top-35 offset-lg-top-60 view-animate fadeInLeftSm delay-08">
+              <p>空地协同交通管控与智能驾驶课题组依托重庆交通大学、重庆市测绘科学技术研究院、航天宏图信息技术股份有限公司，面向山地城市复杂环境，紧扣重庆市空天信息、智能网联等新兴产业发展，聚焦智能感知、时空信息应用基础理论与技术，强化跨学科交叉融合，整合行业优势，推进协同创新。</p>
             </div>
+            <div class="offset-top-30 view-animate fadeInLeftSm delay-1"><a class="btn btn-ellipse btn-icon btn-icon-right button-default" href="academics.html"><span class="icon fa fa-arrow-right"></span><span>了解更多</span></a></div>
           </div>
         </div>
       </section>
-      <!-- Counters-->
-      <section class="section section-xl bg-default">
-        <div class="container">
-          <h2 class="fw-bold">我们的优势</h2>
-          <hr class="divider bg-madison">
-          <div class="row justify-content-sm-center offset-top-60">
-            <div class="col-sm-10 col-md-8">
-              <p>我们拥有强大的科研实力和一流的研究环境，超一流导师团队，浓郁的学术氛围，以及先进的实验设备。</p>
-            </div>
-          </div>
-          <div class="row row-50 row-lg-65 justify-content-sm-center justify-content-lg-start offset-top-65 counters">
-            <div class="col-md-6 col-lg-3">
-              <!-- Counter type 1-->
-              <div class="counter-type-1"><span class="icon icon-lg icon-outlined text-madison icon icon-madison mdi mdi-monitor"></span>
-                <div class="h3 fw-bold text-primary offset-top-15"><span class="counter" data-duration="1300">1000000+</span><span>￥</span></div>
-                <hr class="divider bg-gray-light divider-sm"/>
-                <div class="offset-top-21">
-                  <h6 class="text-black font-accent">拥有价值超百万的实验设备</h6>
+      <!-- 研究方向 -->
+      <section style="padding:0;min-height:85vh;display:flex;flex-direction:column;position:relative;margin:0">
+        <h2 class="fw-bold text-center" style="position:absolute;top:60px;left:0;width:100%;z-index:2;color:#efeff2;text-shadow:0 2px 10px rgba(0,0,0,0.5);margin:0">研究方向</h2>
+        <div style="display:flex;gap:0;flex-wrap:wrap;flex:1">
+            <!-- 方向一：传统交通 - 彭博 -->
+            <div style="flex:1;min-width:280px;position:relative;background:url('img/f1.png') center/cover no-repeat;overflow:hidden">
+              <div style="position:absolute;left:0;bottom:0;width:100%;height:50%;background:linear-gradient(to top, rgba(0,0,0,0.75), transparent)"></div>
+              <div style="position:absolute;left:0;bottom:0;width:100%;padding:40px 30px;color:#fff;z-index:1">
+                <h4 style="font-weight:bold;margin-bottom:8px">传统交通</h4>
+                <p style="margin-bottom:16px;line-height:1.7;font-size:14px;opacity:0.9">围绕传统交通运输系统，开展交通规划、交通流理论、交通安全等方向的研究，结合山地城市特点，探索交通管控新方法。</p>
+                <div style="display:flex;align-items:center">
+                  <div style="width:46px;height:46px;border-radius:50%;background:url('img/pengbo.png') center/cover no-repeat;flex-shrink:0;margin-right:12px"></div>
+                  <div>
+                    <div style="font-weight:bold;font-size:14px">彭博 副教授</div>
+                    <div style="font-size:12px;opacity:0.7">方向负责人</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-3">
-              <!-- Counter type 1-->
-              <div class="counter-type-1"><span class="icon icon-lg icon-outlined text-madison mdi mdi-wallet-travel"></span>
-                <div class="h3 fw-bold text-primary offset-top-15"><span class="counter" data-duration="1250">100</span><span>+</span></div>
-                <hr class="divider bg-gray-light divider-sm"/>
-                <div class="offset-top-21">
-                  <h6 class="text-black font-accent">完成超一百个研究课题</h6>
+            <!-- 方向二：低空经济 - 蔡晓禹 -->
+            <div style="flex:1;min-width:280px;position:relative;background:url('img/f2.png') center/cover no-repeat;overflow:hidden">
+              <div style="position:absolute;left:0;bottom:0;width:100%;height:50%;background:linear-gradient(to top, rgba(0,0,0,0.75), transparent)"></div>
+              <div style="position:absolute;left:0;bottom:0;width:100%;padding:40px 30px;color:#fff;z-index:1">
+                <h4 style="font-weight:bold;margin-bottom:8px">低空经济</h4>
+                <p style="margin-bottom:16px;line-height:1.7;font-size:14px;opacity:0.9">面向低空经济新兴产业，研究无人机路径规划、低空空域管理、空地协同感知等关键技术，推动低空交通智能化发展。</p>
+                <div style="display:flex;align-items:center">
+                  <div style="width:46px;height:46px;border-radius:50%;background:url('img/xiaoyucai.png') center/cover no-repeat;flex-shrink:0;margin-right:12px"></div>
+                  <div>
+                    <div style="font-weight:bold;font-size:14px">蔡晓禹 教授</div>
+                    <div style="font-size:12px;opacity:0.7">方向负责人</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-3">
-              <!-- Counter type 1-->
-              <div class="counter-type-1"><span class="icon icon-lg icon-outlined text-madison mdi mdi-domain"></span>
-                <div class="h3 fw-bold text-primary offset-top-15"><span class="counter" data-duration="1500">400</span>m²</div>
-                <hr class="divider bg-gray-light divider-sm"/>
-                <div class="offset-top-21">
-                  <h6 class="text-black font-accent">超400平独立办公区域</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <!-- Counter type 1-->
-              <div class="counter-type-1"><span class="icon icon-lg icon-outlined text-madison mdi mdi-account-multiple-outline"></span>
-                <div class="h3 fw-bold text-primary offset-top-15"><span class="counter" data-duration="500">60</span>+</div>
-                <hr class="divider bg-gray-light divider-sm"/>
-                <div class="offset-top-21">
-                  <h6 class="text-black font-accent">培养硕博学生六十余人</h6>
+            <!-- 方向三：智能驾驶 - 雷财林 -->
+            <div style="flex:1;min-width:280px;position:relative;background:url('img/f3.png') center/cover no-repeat;overflow:hidden">
+              <div style="position:absolute;left:0;bottom:0;width:100%;height:50%;background:linear-gradient(to top, rgba(0,0,0,0.75), transparent)"></div>
+              <div style="position:absolute;left:0;bottom:0;width:100%;padding:40px 30px;color:#fff;z-index:1">
+                <h4 style="font-weight:bold;margin-bottom:8px">智能驾驶</h4>
+                <p style="margin-bottom:16px;line-height:1.7;font-size:14px;opacity:0.9">聚焦智能网联汽车与自动驾驶技术，研究环境感知、决策规划、车路协同等核心算法，打造山地城市智能驾驶解决方案。</p>
+                <div style="display:flex;align-items:center">
+                  <div style="width:46px;height:46px;border-radius:50%;background:url('img/cailin_lei.jpg') center/cover no-repeat;flex-shrink:0;margin-right:12px"></div>
+                  <div>
+                    <div style="font-weight:bold;font-size:14px">雷财林 讲师</div>
+                    <div style="font-size:12px;opacity:0.7">方向负责人</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
       </section>
-      <!-- Trusted by Over 6000+ Students-->
-      <!-- Events-->
-      <section class="section bg-catskill section-xl">
-        <div class="container container-wide">
-          <h2 class="fw-bold">近期活动</h2>
-          <hr class="divider bg-madison">
-          <div class="row row-50 offset-top-60 justify-content-sm-center">
-            <div class="col-md-6 col-lg-5 col-xxl-3">
-              <article class="post-event">
-                <div class="post-event-img-overlay"><img class="img-responsive" src="img/new2.jpg" width="420" height="420" alt="">
-                  <div class="post-event-overlay context-dark"><a class="btn button-primary" href="apply.html">查看新闻</a>
-                    <div class="offset-top-20"><a class="btn button-default" href="event-page.html">了解更多</a></div>
-                  </div>
-                </div>
-                <div class="unit unit-lg flex-column flex-xl-row">
-                  <div class="unit-left">
-                    <div class="post-event-meta text-center">
-                      <div class="h3 fw-bold d-inline-block d-xl-block">28</div>
-                      <p class="d-inline-block d-xl-block">3月</p><span class="fw-bold d-inline-block d-xl-block inset-left-10 inset-xl-left-0">10:00am</span>
-                    </div>
-                  </div>
-                  <div class="unit-body">
-                    <div class="post-event-body text-xl-start">
-                      <h6><a href="event-page.html">空地协同交通管控与智能驾驶课题组第一届学术委员会会议</a></h6>
-                      <ul class="list-inline list-inline-xs">
-                        <li><a href="team-member-profile.html"><span class="icon icon-xxs mdi mdi-account-outline align-middle"></span><span class="inset-left-10 text-dark align-middle">蔡晓禹</span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-5 col-xxl-3">
-              <article class="post-event">
-                <div class="post-event-img-overlay"><img class="img-responsive" src="img/new3.png" width="420" height="420" alt="">
-                  <div class="post-event-overlay context-dark"><a class="btn button-primary" href="apply.html">查看新闻</a>
-                    <div class="offset-top-20"><a class="btn button-default" href="event-page.html">了解更多</a></div>
-                  </div>
-                </div>
-                <div class="unit unit-lg flex-column flex-xl-row">
-                  <div class="unit-left">
-                    <div class="post-event-meta text-center">
-                      <div class="h3 fw-bold d-inline-block d-xl-block">25</div>
-                      <p class="d-inline-block d-xl-block">4月</p><span class="fw-bold d-inline-block d-xl-block inset-left-10 inset-xl-left-0">2:00pm</span>
-                    </div>
-                  </div>
-                  <div class="unit-body">
-                    <div class="post-event-body text-xl-start">
-                      <h6><a href="event-page.html">智慧城市学院专业优化升级研讨会</a></h6>
-                      <ul class="list-inline list-inline-xs">
-                        <li><a href="team-member-profile.html"><span class="icon icon-xxs mdi mdi-account-outline align-middle"></span><span class="inset-left-10 text-dark align-middle">智慧城市学院</span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-5 col-xxl-3">
-              <article class="post-event">
-                <div class="post-event-img-overlay"><img class="img-responsive" src="img/new4.png" width="420" height="420" alt="">
-                  <div class="post-event-overlay context-dark"><a class="btn button-primary" href="apply.html">查看新闻</a>
-                    <div class="offset-top-20"><a class="btn button-default" href="event-page.html">了解更多</a></div>
-                  </div>
-                </div>
-                <div class="unit unit-lg flex-column flex-xl-row">
-                  <div class="unit-left">
-                    <div class="post-event-meta text-center">
-                      <div class="h3 fw-bold d-inline-block d-xl-block">15</div>
-                      <p class="d-inline-block d-xl-block">5月</p><span class="fw-bold d-inline-block d-xl-block inset-left-10 inset-xl-left-0">5:00pm</span>
-                    </div>
-                  </div>
-                  <div class="unit-body">
-                    <div class="post-event-body text-xl-start">
-                      <h6><a href="event-page.html">香港大学周宇宇教授应邀为智慧城市学院作学术报告</a></h6>
-                      <ul class="list-inline list-inline-xs">
-                        <li><a href="team-member-profile.html"><span class="icon icon-xxs mdi mdi-account-outline align-middle"></span><span class="inset-left-10 text-dark align-middle">周宇宇</span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-5 col-xxl-3">
-              <article class="post-event">
-                <div class="post-event-img-overlay"><img class="img-responsive" src="img/new5.png" width="420" height="420" alt="">
-                  <div class="post-event-overlay context-dark"><a class="btn button-primary" href="apply.html">查看新闻</a>
-                    <div class="offset-top-20"><a class="btn button-default" href="event-page.html">了解更多</a></div>
-                  </div>
-                </div>
-                <div class="unit unit-lg flex-column flex-xl-row">
-                  <div class="unit-left">
-                    <div class="post-event-meta text-center">
-                      <div class="h3 fw-bold d-inline-block d-xl-block">22</div>
-                      <p class="d-inline-block d-xl-block">8月</p><span class="fw-bold d-inline-block d-xl-block inset-left-10 inset-xl-left-0">10:00am</span>
-                    </div>
-                  </div>
-                  <div class="unit-body">
-                    <div class="post-event-body text-xl-start">
-                      <h6><a href="event-page.html">第五届智能交通系统与智慧城市国际学术会议</a></h6>
-                      <ul class="list-inline list-inline-xs">
-                        <li><a href="team-member-profile.html"><span class="icon icon-xxs mdi mdi-account-outline align-middle"></span><span class="inset-left-10 text-dark align-middle">智慧城市学院</span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="offset-top-50 offset-lg-top-56"><a class="btn btn-icon btn-icon-right button-primary" href="calendar.html"><span class="icon fa fa-arrow-right"></span><span>查看更多</span></a></div>
-        </div>
-      </section>
-      <!-- Testimonials-->
-      <section class="section section-xl bg-catskill">
-              <div class="container">
-                <h2 class="fw-bold">团队介绍</h2>
-                <hr class="divider bg-madison">
-                <div class="row row-50 text-md-start offset-top-60">
-                  <div class="col-md-6 col-xl-4">
-                    <div class="unit unit-sm flex-column flex-md-row unit-spacing-lg">
-                      <div class="unit-left"><img class="img-responsive d-inline-block img-rounded" src="img/xiaoyucai.png" width="110" height="110" alt=""></div>
-                      <div class="unit-body">
-                        <h6 class="fw-bold text-primary"><a href="team-member-profile-caixiaoyu.html">蔡晓禹</a></h6>
-                        <div class="offset-sm-top-30">
-                          <ul class="list list-unstyled">
-                            <li><span class="icon icon-xs mdi mdi-phone align-middle text-gray" style="font-size: 24px; line-height: 24px"></span><a class="d-inline-block text-black inset-left-10" href="tel:#">13708329902</a></li>
-                            <li><span class="icon icon-xs mdi mdi-email-outline align-middle text-gray" style="font-size: 24px; line-height: 24px"></span><a class="d-inline-block inset-left-10" href="mailto:info@demolink.org">caixiaoyu@cqjtu.edu.cn</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="offset-top-20">
-                      <p>蔡晓禹，同济大学工学博士，教授，博士研究生导师，博士后合作导师。重庆市学术技术带头人、重庆市高校优秀人才，重庆五一劳动奖章获得者、重庆市青年五四红旗手。</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xl-4">
-                    <div class="unit unit-sm flex-column flex-md-row unit-spacing-lg">
-                      <div class="unit-left"><img class="img-responsive d-inline-block img-rounded" src="img/pengbo.png" width="110" height="110" alt=""></div>
-                      <div class="unit-body">
-                        <h6 class="fw-bold text-primary"><a href="team-member-profile-pengbo.html">彭博</a></h6>
-                        <div class="offset-sm-top-30">
-                          <ul class="list list-unstyled">
-                            <li><span class="icon icon-xs mdi mdi-phone align-middle text-gray" style="font-size: 24px; line-height: 24px"></span><a class="d-inline-block text-black inset-left-10" href="tel:#"> </a></li>
-                            <li><span class="icon icon-xs mdi mdi-email-outline align-middle text-gray" style="font-size: 24px; line-height: 24px"></span><a class="d-inline-block inset-left-10" href="mailto:info@demolink.org"> </a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="offset-top-20">
-                      <p>彭博，男，汉族，1986年4月出生，重庆交通大学智慧城市学院副教授，美国Oklahoma State University访问学者，工学博士。</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xl-4">
-                    <div class="unit unit-sm flex-column flex-md-row unit-spacing-lg">
-                      <div class="unit-left"><img class="img-responsive d-inline-block img-rounded" src="img/cailin_lei.jpg" width="110" height="110" alt=""></div>
-                      <div class="unit-body">
-                        <h6 class="fw-bold text-primary"><a href="team-member-profile-leicailin.html">雷财林</a></h6>
-                        <div class="offset-sm-top-30">
-                          <ul class="list list-unstyled">
-                            <li><span class="icon icon-xs mdi mdi-phone align-middle text-gray" style="font-size: 24px; line-height: 24px"></span><a class="d-inline-block text-black inset-left-10" href="tel:#">15823208238</a></li>
-                            <li><span class="icon icon-xs mdi mdi-email-outline align-middle text-gray" style="font-size: 24px; line-height: 24px"></span><a class="d-inline-block inset-left-10" href="mailto:info@demolink.org">2010762@tongji.edu.cn</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="offset-top-20">
-                      <p>雷财林，男，讲师，硕士生导师，2024年博士毕业于同济大学交通学院，加拿大滑铁卢大学联合培养博士（国家公派）。研究方向为车路智能感知与认知计算。</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-      <!-- <section class="section bg-madison context-dark position-relative">
-        <div class="owl-carousel owl-carousel-default owl-carousel-nav-xl" data-items="1" data-nav="true" data-dots="true" data-autoplay="true" data-nav-class="[&quot;owl-prev fa fa-angle-left&quot;, &quot;owl-next fa fa-angle-right&quot;]">
-          <div>
-            <div class="container section-70 section-xl-100 section-xl-bottom-114">
-              <div class="row justify-content-sm-center align-items-sm-center">
-                <div class="col-md-3 text-md-end order-md-2"><img class="img-responsive d-inline-block rounded-circle" src="img/xiaoyucai.png" width="230" height="230" alt=""></div>
-                <div class="col-md-9 order-md-1">
-                  <div class="quote-classic-boxed text-start">
-                    <div class="quote-body">
-                      <q>自己的兴趣在于做一些和产业结合的科研工作，成果还能支撑产业发展，这是我期望的一种状态。</q>
-                      <div class="offset-top-30 text-end">
-                        <cite class="font-accent">蔡晓禹</cite>
-                        <div class="offset-top-5">
-                          <p class="text-dark fst-italic">重庆交通大学发展规划处处长</p>
-                        </div>
+      <!-- 课题组优势 -->
+      <section class="section text-center bg-default" style="padding:0;position:relative;overflow:hidden;background:url('img/345.png') center/cover no-repeat;min-height:85vh">
+        <div style="position:absolute;left:0;top:0;width:100%;height:100%;background:linear-gradient(to left, transparent 40%, #ffffff 60%, #ffffff 100%)"></div>
+        <div style="position:relative;z-index:1;display:flex;align-items:center;justify-content:flex-start;min-height:85vh;padding:60px 5vw">
+          <div style="max-width:520px;text-align:left">
+            <h2 class="home-headings-custom fw-bold view-animate fadeInLeftSm delay-04"><span class="first-word">我们的</span>优势</h2>
+            <div class="offset-top-35 offset-md-top-60 view-animate fadeInLeftSm delay-06">我们拥有强大的科研实力和一流的研究环境，超一流导师团队，浓郁的学术氛围，以及先进的实验设备，致力于培养智能交通领域的拔尖创新人才。</div>
+            <div>
+              <div class="row row-65 justify-content-sm-center justify-content-lg-start offset-top-65 counters">
+                <div class="col-sm-6 view-animate fadeInLeftSm delay-08">
+                  <div class="unit flex-column flex-sm-row unit-responsive-md counter-type-2">
+                    <div class="unit-left"><span class="icon icon-md text-madison mdi mdi-trophy"></span></div>
+                    <div class="unit-body">
+                      <div class="h3 fw-bold text-primary"><span class="counter" data-speed="1300">15</span><span>+</span></div>
+                      <div class="offset-top-3">
+                        <h6 class="text-black font-accent fw-bold">省部级科技奖项</h6>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="container section-70 section-xl-100 section-xl-bottom-114">
-              <div class="row justify-content-sm-center align-items-sm-center">
-                <div class="col-md-3 text-md-end order-md-2"><img class="img-responsive d-inline-block rounded-circle" src="img/pengbo.png" width="230" height="230" alt=""></div>
-                <div class="col-md-9 order-md-1">
-                  <div class="quote-classic-boxed text-start">
-                    <div class="quote-body">
-                      <q>所有软件的学习都不是我们的最终目的，软件始终都是实现人类思想的手段和工具，因此不要为了学习软件而学习软件。</q>
-                      <div class="offset-top-30 text-end">
-                        <cite class="font-accent">彭博</cite>
-                        <div class="offset-top-5">
-                          <p class="text-dark fst-italic">重庆交通大学智慧城市学院副教授</p>
-                        </div>
+                <div class="col-sm-6 view-animate fadeInLeftSm delay-04">
+                  <div class="unit flex-column flex-sm-row unit-responsive-md counter-type-2">
+                    <div class="unit-left"><span class="icon icon-md text-madison mdi mdi-wallet-travel"></span></div>
+                    <div class="unit-body">
+                      <div class="h3 fw-bold text-primary"><span class="counter" data-speed="1250">100</span><span>+</span></div>
+                      <div class="offset-top-3">
+                        <h6 class="text-black font-accent fw-bold">完成研究课题</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 view-animate fadeInLeftSm delay-1">
+                  <div class="unit flex-column flex-sm-row unit-responsive-md counter-type-2">
+                    <div class="unit-left"><span class="icon icon-md text-madison mdi mdi-domain"></span></div>
+                    <div class="unit-body">
+                      <div class="h3 fw-bold text-primary offset-top-5"><span class="counter" data-step="500">400</span>m²</div>
+                      <div class="offset-top-3">
+                        <h6 class="text-black font-accent fw-bold">独立办公实验区域</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 view-animate fadeInLeftSm delay-06">
+                  <div class="unit flex-column flex-sm-row unit-responsive-md counter-type-2">
+                    <div class="unit-left"><span class="icon icon-md text-madison mdi mdi-account-multiple-outline"></span></div>
+                    <div class="unit-body">
+                      <div class="h3 fw-bold text-primary offset-top-5"><span class="counter" data-step="1500">60</span>+</div>
+                      <div class="offset-top-3">
+                        <h6 class="text-black font-accent fw-bold">培养硕博研究生</h6>
                       </div>
                     </div>
                   </div>
@@ -550,119 +353,277 @@
             </div>
           </div>
         </div>
-      </section> -->
-      <!-- Latest news-->
-      <section class="section bg-catskill section-xl">
-        <div class="container">
-          <h2 class="fw-bold">新闻动态</h2>
-          <hr class="divider bg-madison">
-          <div class="row row-30 offset-top-60 text-start justify-content-sm-center">
-            <div class="col-md-6 col-lg-4">
-              <article class="post-news"><a href="news-post-page.html"><img class="img-responsive" src="img/n5.jpg" width="370" height="240" alt=""></a>
-                <div class="post-news-body">
-                  <h6><a href="news-post-page.html">云篆山团建</a></h6>
-                  <div class="offset-top-20">
-                    <p>课题组团建活动</p>
-                  </div>
-                  <div class="post-news-meta offset-top-20"><span class="icon icon-xs mdi mdi-calendar-clock align-middle text-madison"></span><span class="align-middle inset-left-10 fst-italic text-black">2025.3.15</span></div>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <article class="post-news"><a href="news-post-page.html"><img class="img-responsive" src="img/n10.jpg" width="370" height="240" alt=""></a>
-                <div class="post-news-body">
-                  <h6><a href="news-post-page.html">中梁山团建</a></h6>
-                  <div class="offset-top-20">
-                    <p>中梁山团建活动</p>
-                  </div>
-                  <div class="post-news-meta offset-top-20"><span class="icon icon-xs mdi mdi-calendar-clock align-middle text-madison"></span><span class="align-middle inset-left-10 fst-italic text-black">2025.4.13</span></div>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <article class="post-news"><a href="news-post-page.html"><img class="img-responsive" src="img/n2.jpg" width="370" height="240" alt=""></a>
-                <div class="post-news-body">
-                  <h6><a href="news-post-page.html">青岛参会</a></h6>
-                  <div class="offset-top-20">
-                    <p>青岛WTC2024</p>
-                  </div>
-                  <div class="post-news-meta offset-top-20"><span class="icon icon-xs mdi mdi-calendar-clock align-middle text-madison"></span><span class="align-middle inset-left-10 fst-italic text-black">2024.6.12</span></div>
-                </div>
-              </article>
-            </div>
-            <!-- <div class="col-md-6 col-lg-4">
-              <article class="post-news"><a href="news-post-page.html"><img class="img-responsive" src="images/blog/news-04-370x240.jpg" width="370" height="240" alt=""></a>
-                <div class="post-news-body">
-                  <h6><a href="news-post-page.html">
-                      Ways Parents and Counselors Can
-                      Help Students Earn Scholarships</a></h6>
-                  <div class="offset-top-20">
-                    <p>Securing scholarships can be stressful, but parents and counselors can serve as a resource.</p>
-                  </div>
-                  <div class="post-news-meta offset-top-20"><span class="icon icon-xs mdi mdi-calendar-clock align-middle text-madison"></span><span class="align-middle inset-left-10 fst-italic text-black">2 days ago</span></div>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <article class="post-news"><a href="news-post-page.html"><img class="img-responsive" src="images/blog/news-05-370x240.jpg" width="370" height="240" alt=""></a>
-                <div class="post-news-body">
-                  <h6><a href="news-post-page.html">
-                      Consider MBA Programs That
-                      Offer Summer Prep</a></h6>
-                  <div class="offset-top-20">
-                    <p>Summer preparatory programs offered through schools allow students to get a head start on making connections and building skills.</p>
-                  </div>
-                  <div class="post-news-meta offset-top-20"><span class="icon icon-xs mdi mdi-calendar-clock align-middle text-madison"></span><span class="align-middle inset-left-10 fst-italic text-black">2 days ago</span></div>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <article class="post-news"><a href="news-post-page.html"><img class="img-responsive" src="images/blog/news-06-370x240.jpg" width="370" height="240" alt=""></a>
-                <div class="post-news-body">
-                  <h6><a href="news-post-page.html">Studying in the United States</a></h6>
-                  <div class="offset-top-20">
-                    <p>International students increasingly want to come to the United States for college or graduate school.</p>
-                  </div>
-                  <div class="post-news-meta offset-top-20"><span class="icon icon-xs mdi mdi-calendar-clock align-middle text-madison"></span><span class="align-middle inset-left-10 fst-italic text-black">2 days ago</span></div>
-                </div>
-              </article> -->
-            </div>
-          </div>
-          <div class="offset-top-50"><a class="btn button-primary" href="modern-news.html">查看更多</a></div>
+      </section>
+      <section id="event-section" style="padding:0;position:relative;overflow:hidden;min-height:85vh;margin:0">
+        <div id="event-bg-track" style="position:absolute;left:0;top:0;width:400%;height:100%;display:flex;transition:transform 0.8s ease">
+          <div style="flex:0 0 25%;background:url('img/_MG_4830.JPG') center/cover no-repeat"></div>
+          <div style="flex:0 0 25%;background:url('img/_MG_5094.JPG') center/cover no-repeat"></div>
+          <div style="flex:0 0 25%;background:url('img/_MG_8546.JPG') center/cover no-repeat"></div>
+          <div style="flex:0 0 25%;background:url('img/1313.JPG') center/cover no-repeat"></div>
         </div>
-      </section>
-      <!-- Gallery Simple-->
-      <!-- Gallery-->
-      <section class="section">
-        <div class="owl-carousel flickr owl-carousel-fullheight" data-items="2" data-sm-items="2" data-autoplay="true" data-md-items="4" data-xxl-items="6" data-nav="false" data-dots="false" data-mouse-drag="true" data-lightgallery="group" data-stage-padding="0" data-xl-stage-padding="0"><a class="thumbnail-default" data-lightgallery="item" href="img/n1.jpg"><img width="320" height="320" data-title="alt" src="img/n1.jpg" alt=""><span class="icon fa fa-search-plus"></span></a><a class="thumbnail-default" data-lightgallery="item" href="img/n2.jpg"><img width="320" height="320" src="img/n2.jpg" alt=""><span class="icon fa fa-search-plus"></span></a><a class="thumbnail-default" data-lightgallery="item" href="img/n3.jpg"><img width="320" height="320" src="img/n3.jpg" alt=""><span class="icon fa fa-search-plus"></span></a><a class="thumbnail-default" data-lightgallery="item" href="img/n4.jpg"><img width="320" height="320" src="img/n4.jpg" alt=""><span class="icon fa fa-search-plus"></span></a><a class="thumbnail-default" data-lightgallery="item" href="img/n5.jpg"><img width="320" height="320" src="img/n5.jpg" alt=""><span class="icon fa fa-search-plus"></span></a><a class="thumbnail-default" data-lightgallery="item" href="img/n6.jpg"><img width="320" height="320" src="img/n6.jpg" alt=""><span class="icon fa fa-search-plus"></span></a><a class="thumbnail-default" data-lightgallery="item" href="img/n7.jpg"><img width="320" height="320" src="img/n7.jpg"alt=""><span class="icon fa fa-search-plus"></span></a><a class="thumbnail-default" data-lightgallery="item" href="img/n8.jpg"><img width="320" height="320" src="img/n8.jpg"alt=""><span class="icon fa fa-search-plus"></span></a><a class="thumbnail-default" data-lightgallery="item" href="img/n9.jpg"><img width="320" height="320" src="img/n9.jpg"alt=""><span class="icon fa fa-search-plus"></span></a><a class="thumbnail-default" data-lightgallery="item" href="img/n10.jpg"><img width="320" height="320" src="img/n10.jpg"alt=""><span class="icon fa fa-search-plus"></span></a></div>
-      </section>
-      <!-- Footer Corprorate-->
-      <!-- Corporate footer-->
-      <footer class="section-xs page-footer">
-        <div class="container">
-          <div class="row row-20 justify-content-sm-center align-items-md-center text-lg-start">
-            <div class="col-sm-10 col-lg-6">
-              <!--Footer brand--><a class="d-inline-block" href="index.html">
-                <div class="unit align-items-sm-center unit-md flex-column flex-lg-row unit-spacing-xxs">
-                  <div class="unit-left"><img class="img-responsive d-inline-block" src="img/lab_logo.png" width="70"
-                      height="70" alt=""></div>
-                  <div class="unit-body text-xxl-start">
-                    <div>
-                      <h6 class="barnd-name text-ubold">重庆交通大学</h6>
-                    </div>
-                    <div class="offset-top-0">
-                      <p class="brand-slogan text-gray fst-italic font-accent">空地协同交通管控与智能驾驶课题组</p>
-                    </div>
-                  </div>
+        <div style="position:absolute;left:0;top:0;width:100%;height:100%;background:linear-gradient(to right, transparent 30%, #ffffff 80%, #ffffff 100%);z-index:1"></div>
+        <div style="position:relative;z-index:2;display:flex;align-items:center;justify-content:flex-end;min-height:85vh;padding:60px 5vw">
+          <div style="max-width:520px;width:100%">
+            <h2 class="fw-bold" style="margin-bottom:30px">近期活动</h2>
+            <div style="border-left:3px solid #e0e0e0;padding-left:0">
+              <a class="event-nav-item" href="event-page.html" data-idx="0" style="display:flex;align-items:flex-start;padding:14px 20px;text-decoration:none;color:#1a1a1a;border-left:3px solid transparent;margin-left:-3px;transition:all 0.3s">
+                <div style="flex:1">
+                  <div style="font-weight:bold;font-size:15px;margin-bottom:4px">课题组第一届学术委员会会议</div>
+                  <div style="font-size:12px;color:#999">2025-03-28 10:00 | 蔡晓禹</div>
                 </div>
+                <span style="color:#ccc;font-size:18px;line-height:1">›</span>
+              </a>
+              <a class="event-nav-item" href="event-page.html" data-idx="1" style="display:flex;align-items:flex-start;padding:14px 20px;text-decoration:none;color:#1a1a1a;border-left:3px solid transparent;margin-left:-3px;transition:all 0.3s">
+                <div style="flex:1">
+                  <div style="font-weight:bold;font-size:15px;margin-bottom:4px">智慧城市学院专业优化升级研讨会</div>
+                  <div style="font-size:12px;color:#999">2025-04-25 14:00 | 智慧城市学院</div>
+                </div>
+                <span style="color:#ccc;font-size:18px;line-height:1">›</span>
+              </a>
+              <a class="event-nav-item" href="event-page.html" data-idx="2" style="display:flex;align-items:flex-start;padding:14px 20px;text-decoration:none;color:#1a1a1a;border-left:3px solid transparent;margin-left:-3px;transition:all 0.3s">
+                <div style="flex:1">
+                  <div style="font-weight:bold;font-size:15px;margin-bottom:4px">香港大学周宇宇教授学术报告</div>
+                  <div style="font-size:12px;color:#999">2025-05-15 17:00 | 周宇宇</div>
+                </div>
+                <span style="color:#ccc;font-size:18px;line-height:1">›</span>
+              </a>
+              <a class="event-nav-item" href="event-page.html" data-idx="3" style="display:flex;align-items:flex-start;padding:14px 20px;text-decoration:none;color:#1a1a1a;border-left:3px solid transparent;margin-left:-3px;transition:all 0.3s">
+                <div style="flex:1">
+                  <div style="font-weight:bold;font-size:15px;margin-bottom:4px">第五届智能交通与智慧城市国际学术会议</div>
+                  <div style="font-size:12px;color:#999">2025-08-22 10:00 | 智慧城市学院</div>
+                </div>
+                <span style="color:#ccc;font-size:18px;line-height:1">›</span>
               </a>
             </div>
-            <div class="col-sm-10 col-lg-6 text-lg-end">
-              <p class="text-dark rights"><span>&copy;&nbsp;</span><span
-                  class="copyright-year"></span><span>.&nbsp;</span><span>空地协同交通管控与智能驾驶课题组</span><span>.</a></p>
+            <div style="margin-top:20px">
+              <a class="btn btn-ellipse btn-icon btn-icon-right button-primary" href="calendar.html"><span class="icon fa fa-arrow-right"></span><span>查看更多活动</span></a>
             </div>
           </div>
         </div>
+      </section>
+      <script>
+      (function(){
+        var bgTrack = document.getElementById('event-bg-track');
+        var items = document.querySelectorAll('.event-nav-item');
+        var total = 4;
+        var current = 0;
+        var auto;
+        function goTo(i) {
+          current = i;
+          bgTrack.style.transform = 'translateX(-' + (current * 100 / total) + '%)';
+          items.forEach(function(el, idx){
+            el.style.borderLeftColor = idx === current ? '#1a1a1a' : 'transparent';
+            el.style.background = idx === current ? '#f5f5f5' : 'transparent';
+          });
+        }
+        items.forEach(function(el){
+          el.addEventListener('mouseenter', function(){
+            var idx = parseInt(this.getAttribute('data-idx'));
+            goTo(idx);
+            clearInterval(auto);
+          });
+          el.addEventListener('mouseleave', function(){
+            auto = setInterval(next, 3000);
+          });
+        });
+        function next(){ goTo((current + 1) % total); }
+        auto = setInterval(next, 3000);
+        goTo(0);
+      })();
+      </script>
+      <!-- 导师寄语 -->
+      <section class="section context-dark parallax-container position-relative" data-parallax-img="img/10.jpg">
+        <div class="parallax-content">
+          <div style="padding:0 5vw">
+            <div class="owl-carousel owl-carousel-default carousel-type-1 owl-carousel-nav-xl" data-items="1" data-md-items="2" data-nav="true" data-dots="true" data-margin="30" data-loop="true" data-nav-class="[&quot;owl-prev fa fa-angle-left&quot;, &quot;owl-next fa fa-angle-right&quot;]">
+              <div class="section-xl">
+                <div class="quote-classic-boxed text-start">
+                  <div class="quote-body">
+                    <q>自己的兴趣在于做一些和产业结合的科研工作，成果还能支撑产业发展，这是我期望的一种状态。</q>
+                    <div class="offset-top-30 text-start">
+                      <div class="unit flex-row">
+                        <div class="unit-left"><img class="img-responsive d-inline-block rounded-circle" src="img/xiaoyucai.png" width="80" height="80" alt=""></div>
+                        <div class="unit-body">
+                          <cite class="font-accent">蔡晓禹</cite>
+                          <div class="offset-top-5">
+                            <p class="text-dark fst-italic">教授，博士生导师，博士后合作导师</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-xl">
+                <div class="quote-classic-boxed text-start">
+                  <div class="quote-body">
+                    <q>所有软件的学习都不是我们的最终目的，软件始终都是实现人类思想的手段和工具，因此不要为了学习软件而学习软件。</q>
+                    <div class="offset-top-30 text-start">
+                      <div class="unit flex-row">
+                        <div class="unit-left"><img class="img-responsive d-inline-block rounded-circle" src="img/pengbo.png" width="80" height="80" alt=""></div>
+                        <div class="unit-body">
+                          <cite class="font-accent">彭博</cite>
+                          <div class="offset-top-5">
+                            <p class="text-dark fst-italic">副教授，硕士生导师</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-xl">
+                <div class="quote-classic-boxed text-start">
+                  <div class="quote-body">
+                    <q>科研的本质是探索未知，在车路智能感知与认知计算领域，我们要做的不仅是技术创新，更是为智慧城市提供可行方案。</q>
+                    <div class="offset-top-30 text-start">
+                      <div class="unit flex-row">
+                        <div class="unit-left"><img class="img-responsive d-inline-block rounded-circle" src="img/cailin_lei.jpg" width="80" height="80" alt=""></div>
+                        <div class="unit-body">
+                          <cite class="font-accent">雷财林</cite>
+                          <div class="offset-top-5">
+                            <p class="text-dark fst-italic">讲师，硕士生导师</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 新闻动态 -->
+      <section id="news-section" style="padding:0;position:relative;overflow:hidden;min-height:85vh;margin:0">
+        <div id="news-bg-track" style="position:absolute;left:0;top:0;width:400%;height:100%;display:flex;transition:transform 0.8s ease">
+          <div style="flex:0 0 25%;background:url('img/21.JPG') center/cover no-repeat"></div>
+          <div style="flex:0 0 25%;background:url('img/22.jpg') center/cover no-repeat"></div>
+          <div style="flex:0 0 25%;background:url('img/23.jpeg') center/cover no-repeat"></div>
+          <div style="flex:0 0 25%;background:url('img/IMG_0007.jpeg') center/cover no-repeat"></div>
+        </div>
+        <div style="position:absolute;left:0;top:0;width:100%;height:100%;background:linear-gradient(to right, transparent 30%, #ffffff 80%, #ffffff 100%);z-index:1"></div>
+        <div style="position:relative;z-index:2;display:flex;align-items:center;justify-content:flex-end;min-height:85vh;padding:60px 5vw">
+          <div style="max-width:520px;width:100%">
+            <h2 class="fw-bold" style="margin-bottom:30px">新闻动态</h2>
+            <div style="border-left:3px solid #e0e0e0;padding-left:0">
+              <a class="news-nav-item" href="news-post-page.html" data-idx="0" style="display:flex;align-items:flex-start;padding:14px 20px;text-decoration:none;color:#1a1a1a;border-left:3px solid transparent;margin-left:-3px;transition:all 0.3s">
+                <div style="flex:1">
+                  <div style="font-weight:bold;font-size:15px;margin-bottom:4px">课题组荣获重庆市科技进步奖三等奖</div>
+                  <div style="font-size:12px;color:#999">2025-05-20</div>
+                </div>
+                <span style="color:#ccc;font-size:18px;line-height:1">›</span>
+              </a>
+              <a class="news-nav-item" href="news-post-page.html" data-idx="1" style="display:flex;align-items:flex-start;padding:14px 20px;text-decoration:none;color:#1a1a1a;border-left:3px solid transparent;margin-left:-3px;transition:all 0.3s">
+                <div style="flex:1">
+                  <div style="font-weight:bold;font-size:15px;margin-bottom:4px">课题组获批国家重点研发计划课题</div>
+                  <div style="font-size:12px;color:#999">2025-03-15</div>
+                </div>
+                <span style="color:#ccc;font-size:18px;line-height:1">›</span>
+              </a>
+              <a class="news-nav-item" href="news-post-page.html" data-idx="2" style="display:flex;align-items:flex-start;padding:14px 20px;text-decoration:none;color:#1a1a1a;border-left:3px solid transparent;margin-left:-3px;transition:all 0.3s">
+                <div style="flex:1">
+                  <div style="font-weight:bold;font-size:15px;margin-bottom:4px">云篆山课题组团建活动</div>
+                  <div style="font-size:12px;color:#999">2025-03-15</div>
+                </div>
+                <span style="color:#ccc;font-size:18px;line-height:1">›</span>
+              </a>
+              <a class="news-nav-item" href="news-post-page.html" data-idx="3" style="display:flex;align-items:flex-start;padding:14px 20px;text-decoration:none;color:#1a1a1a;border-left:3px solid transparent;margin-left:-3px;transition:all 0.3s">
+                <div style="flex:1">
+                  <div style="font-weight:bold;font-size:15px;margin-bottom:4px">中梁山课题组团建活动</div>
+                  <div style="font-size:12px;color:#999">2025-04-13</div>
+                </div>
+                <span style="color:#ccc;font-size:18px;line-height:1">›</span>
+              </a>
+            </div>
+            <div style="margin-top:20px">
+              <a class="btn btn-ellipse button-primary" href="modern-news.html">查看全部新闻</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+      (function(){
+        var bgTrack = document.getElementById('news-bg-track');
+        var items = document.querySelectorAll('.news-nav-item');
+        var total = 4;
+        var current = 0;
+        var auto;
+        function goTo(i) {
+          current = i;
+          bgTrack.style.transform = 'translateX(-' + (current * 100 / total) + '%)';
+          items.forEach(function(el, idx){
+            el.style.borderLeftColor = idx === current ? '#1a1a1a' : 'transparent';
+            el.style.background = idx === current ? '#f5f5f5' : 'transparent';
+          });
+        }
+        items.forEach(function(el){
+          el.addEventListener('mouseenter', function(){
+            var idx = parseInt(this.getAttribute('data-idx'));
+            goTo(idx);
+            clearInterval(auto);
+          });
+          el.addEventListener('mouseleave', function(){
+            auto = setInterval(next, 3000);
+          });
+        });
+        function next(){ goTo((current + 1) % total); }
+        auto = setInterval(next, 3000);
+        goTo(0);
+      })();
+      </script>
+      <!-- 课题组风采画廊 -->
+      <section class="section">
+        <div class="owl-carousel flickr owl-carousel-fullheight" data-items="2" data-sm-items="2" data-autoplay="true" data-md-items="4" data-xxl-items="6" data-nav="false" data-dots="false" data-mouse-drag="true" data-lightgallery="group" data-stage-padding="0" data-xl-stage-padding="0"><a class="thumbnail-default" data-lightgallery="item" href="img/n1.jpg"><img width="320" height="320" data-title="alt" src="img/n1.jpg" alt=""><span class="icon fa fa-search-plus"></span></a><a class="thumbnail-default" data-lightgallery="item" href="img/n2.jpg"><img width="320" height="320" src="img/n2.jpg" alt=""><span class="icon fa fa-search-plus"></span></a><a class="thumbnail-default" data-lightgallery="item" href="img/n3.jpg"><img width="320" height="320" src="img/n3.jpg" alt=""><span class="icon fa fa-search-plus"></span></a><a class="thumbnail-default" data-lightgallery="item" href="img/n4.jpg"><img width="320" height="320" src="img/n4.jpg" alt=""><span class="icon fa fa-search-plus"></span></a><a class="thumbnail-default" data-lightgallery="item" href="img/n5.jpg"><img width="320" height="320" src="img/n5.jpg" alt=""><span class="icon fa fa-search-plus"></span></a><a class="thumbnail-default" data-lightgallery="item" href="img/n6.jpg"><img width="320" height="320" src="img/n6.jpg" alt=""><span class="icon fa fa-search-plus"></span></a></div>
+      </section>
+      <!-- 联系方式 -->
+      <section class="section section-xs" style="padding-left:5vw;padding-right:5vw">
+          <div class="row row-30 justify-content-sm-center features-list">
+            <div class="col-md-4">
+              <div class="unit flex-column unit-responsive-md section-45">
+                <div class="unit-left"><span class="icon icon-contact-sm text-madison mdi mdi-phone"></span></div>
+                <div class="unit-body"><a class="h6 text-regular" href="tel:#">(023)62651999</a></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="unit flex-column unit-responsive-md section-45">
+                <div class="unit-left"><span class="icon icon-contact-sm text-madison mdi mdi-map-marker"></span></div>
+                <div class="unit-body"><a class="h6 text-regular" href="#">重庆市双福新区福星大道1号<br class="d-none d-xl-inline">重庆交通大学(科学城校区)</a></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="unit flex-column unit-responsive-md section-45">
+                <div class="unit-left"><span class="icon icon-contact-sm text-madison mdi mdi-email-open"></span></div>
+                <div class="unit-body"><a class="h6 text-regular" href="mailto:#">cqjtukxc@cqjtu.edu.cn</a></div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!-- Footer -->
+      <footer class="page-footer" style="padding-left:5vw;padding-right:5vw">
+        <div class="section-xs section-bottom-20">
+          <div class="row justify-content-sm-center">
+            <div class="col-lg-3 col-xl-2">
+              <!--Footer brand--><a class="d-inline-block view-animate zoomInSmall delay-06" href="index.html"><img width="65" height="65" src="img/logo3.png" alt="">
+                <div>
+                  <h6 class="barnd-name fw-bold offset-top-12">重庆交通大学</h6>
+                </div>
+                <div>
+                  <p class="brand-slogan text-gray fst-italic font-accent">空地协同与智能驾驶课题组</p>
+                </div></a>
+            </div>
+            <div class="col-sm-12 offset-top-15 offset-sm-top-40 text-center">
+              <ul class="list-inline list-inline-xs list-inline-madison">
+                <li><a class="icon novi-icon icon-xxs fa fa-facebook icon-circle icon-gray-light-filled view-animate zoomInSmall delay-04" href="#"></a></li>
+                <li><a class="icon novi-icon icon-xxs fa fa-twitter icon-circle icon-gray-light-filled view-animate zoomInSmall delay-06" href="#"></a></li>
+                <li><a class="icon novi-icon icon-xxs fa fa-google icon-circle icon-gray-light-filled view-animate zoomInSmall delay-08" href="#"></a></li>
+                <li><a class="icon novi-icon icon-xxs fa fa-instagram icon-circle icon-gray-light-filled view-animate zoomInSmall delay-1" href="#"></a></li>
+              </ul>
+            </div>
+            <div class="col-sm-12 text-center offset-top-20 offset-sm-top-45">
+              <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>重庆交通大学</span><span>.&nbsp;</span><span>空地协同与智能驾驶课题组</span></p>
+            </div>
+          </div>
       </footer>
     </div>
     <!-- Global Mailform Output-->
